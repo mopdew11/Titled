@@ -7,7 +7,7 @@ if(instance_exists(obj_player) && obj_player.playerHealth <= 0)
 else if (place_meeting(x,y,obj_player))
 {
 	audio_play_sound(snd_hit,10,false);
-	obj_player.playerHealth -= 10;	
+	obj_player.playerHealth -= damage;	
 	instance_destroy();
 }
 if(instance_exists(obj_terrain) && place_meeting(x,y,obj_terrain))

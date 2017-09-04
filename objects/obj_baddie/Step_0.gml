@@ -32,19 +32,5 @@ i++;
 
 //shoot
 
-//if it has been sRan frames scince last shot
-if(iShoot > sRan)
-{
-	//plays shoot sound
-	audio_play_sound(snd_badShoot,5,false);
-	
-	//creates baddie projectile
-	instance_create_depth(x,y,10,obj_badProjectile);
-	
-	//generates a new frane count to wait
-	sRan = irandom_range(10,60);
-	
-	//resets frame counter
-	iShoot = 0;
-}
-iShoot++;
+
+scp_baddie_shoot(baddieDamage);

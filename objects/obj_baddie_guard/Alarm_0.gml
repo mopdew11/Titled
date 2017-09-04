@@ -6,4 +6,4 @@ direction = choose(0, 90, 180, 270 );
 
 
 //reset alarm
-alarm[0] = 120;
+alarm[0] = turnTime;
