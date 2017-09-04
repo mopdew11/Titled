@@ -14,3 +14,5 @@ i = 0;
 maxCharge = 45;
 fulli = 16;
 talking = false;
+globalvar detected;
+detected = false;
