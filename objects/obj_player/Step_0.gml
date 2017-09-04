@@ -8,17 +8,8 @@ right = keyboard_check(ord("D"));
 shoot = mouse_check_button_pressed(mb_left);
 charge = mouse_check_button_pressed(mb_right);
 chargeRelese = mouse_check_button_released(mb_right);
+melee = keyboard_check_pressed(ord("F"));
 
-/*
-if(!instance_exists(obj_text))
-{	
-	talking = false;
-}
-else
-{
-	talking = true;
-}
-*/
 //determin what direction the player moves by adding inputs
 //and then multiplying it by movespeed
 moveY = (down + up) * movespeed;
@@ -29,7 +20,13 @@ if(talking = false)
 	scp_movement();
 }
 
-
+//==================================================================
+//melee
+if(melee = true)
+{
+	audio_play_sound(snd_knife,5,false);
+	scp_melee();
+}
 //==================================================================
 //charge shot
 if(charge == true)
@@ -67,6 +64,7 @@ if(isCharging == true && i == maxCharge)
 		fulli = 0;
 	}
 }
+
 
 //==================================================================
 //shooting

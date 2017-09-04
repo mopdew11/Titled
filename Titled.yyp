@@ -599,10 +599,18 @@
             }
         },
         {
+            "Key": "ed809878-0de4-42ba-9b7e-967f4e1cd180",
+            "Value": {
+                "id": "e2f85d9d-a27e-426c-adb5-5ae8c9ec6173",
+                "resourcePath": "objects\\obj_melee\\obj_melee.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "eda356a7-7309-4291-b9fb-b47006f68186",
             "Value": {
                 "id": "e0bd8f63-4aac-4725-b778-6d49cc1c7586",
-                "resourcePath": "scripts\\scr_melee\\scr_melee.yy",
+                "resourcePath": "scripts\\scp_melee\\scp_melee.yy",
                 "resourceType": "GMScript"
             }
         },
