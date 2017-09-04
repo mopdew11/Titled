@@ -1,5 +1,5 @@
 /// @description add text over time
-if(obj_player.close == true)
+if(instance_nearest(x,y,obj_npc).close == true)
 {
 	if (time < text_length)
 	{
@@ -11,6 +11,10 @@ if(obj_player.close == true)
 			i = 0;			
 		}
 		i++;
+	}
+	else
+	{
+		obj_player.talking = false;
 	}
 	
 
@@ -38,4 +42,7 @@ if(obj_player.close == true)
 	);
 
 	draw_set_alpha(1);
+}else
+{
+	instance_destroy();
 }

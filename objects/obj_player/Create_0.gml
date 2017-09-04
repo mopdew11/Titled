@@ -8,9 +8,9 @@ iHealth = 0;
 //measured in seconds
 invinceTime = 2;
 invincible = false;
-close = false;
 isDead = false;
 isCharging = false;
 i = 0;
 maxCharge = 45;
 fulli = 16;
+talking = false;

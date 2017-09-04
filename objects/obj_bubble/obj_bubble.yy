@@ -5,7 +5,17 @@
     "name": "obj_bubble",
     "eventList": [
         {
-            "id": "901c0777-c8f1-464c-b899-0c702e2db4a7",
+            "id": "13f8e1b1-2e69-4943-8891-7b7c2c65e8e0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "6bc249ef-38a7-4860-bfac-230009dbca22"
+        },
+        {
+            "id": "fa93d099-5d72-49d4-ac37-aa3801865b3a",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
