@@ -16,4 +16,3 @@ fulli = 16;
 talking = false;
 globalvar detected;
 detected = false;
-dir = "down";

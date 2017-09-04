@@ -6,8 +6,7 @@
     "children": [
         "eae068b5-0c2c-48f9-8954-b399f1edbbcd",
         "a1d04d9f-376b-4599-b9bf-6d2dbd8f056e",
-        "f7e54757-8360-4dd9-8361-2f0f66568d3e",
-        "cdb9e273-b9c5-43d6-b4df-650d4b7ce8dc"
+        "f7e54757-8360-4dd9-8361-2f0f66568d3e"
     ],
     "filterType": "GMObject",
     "folderName": "baddie",
