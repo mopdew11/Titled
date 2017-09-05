@@ -6,7 +6,8 @@
     "children": [
         "89b24fa4-5abc-4e2d-9803-6b2a8b4fffe9",
         "737d8863-691b-458f-88d5-2a925aa82741",
-        "681870c0-58ea-4390-9a0a-77b76aab82a0"
+        "681870c0-58ea-4390-9a0a-77b76aab82a0",
+        "097900f6-a061-4ef5-b357-d76cd046add0"
     ],
     "filterType": "GMSprite",
     "folderName": "baddie",
