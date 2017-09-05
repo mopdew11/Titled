@@ -33,4 +33,4 @@ i++;
 //shoot
 
 
-scr_baddie_shoot(baddieDamage);
+scp_bad_shoot(baddieDamage);
