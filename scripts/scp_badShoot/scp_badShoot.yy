@@ -1,8 +1,8 @@
 {
-    "id": "c8fddcac-a0a5-4618-847b-9a072b12a954",
+    "id": "4c5adc3b-1365-4998-814a-896bc57b9d56",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scp_bad_shoot",
+    "name": "scp_badShoot",
     "IsCompatibility": false,
     "IsDnD": false
 }

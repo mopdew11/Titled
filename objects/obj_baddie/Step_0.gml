@@ -33,4 +33,4 @@ i++;
 //shoot
 
 
-scp_bad_shoot(baddieDamage);
+scp_badShoot(baddieDamage);
