@@ -24,8 +24,11 @@ if(talking = false)
 //melee
 if(melee = true)
 {
-	audio_play_sound(snd_knife,5,false);
-	scp_melee();
+	if(!instance_exists(obj_melee))
+	{
+		audio_play_sound(snd_knife,5,false);
+		scp_melee(obj_melee);
+	}
 }
 //==================================================================
 //charge shot
