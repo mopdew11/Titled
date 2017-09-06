@@ -17,3 +17,8 @@ talking = false;
 globalvar detected;
 detected = false;
 dir = "down";
+
+
+//weapon selection
+Primary = 0;
+secondary = 1;

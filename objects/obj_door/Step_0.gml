@@ -1,5 +1,5 @@
 /// @description open/close
-if(!instance_exists(target))
+if(!instance_exists(obj_baddie))
 {
 	sprite_index = spr_doorOpen;
 }

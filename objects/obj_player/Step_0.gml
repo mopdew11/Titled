@@ -27,7 +27,7 @@ if(melee = true)
 	if(!instance_exists(obj_melee))
 	{
 		audio_play_sound(snd_knife,5,false);
-		scp_melee(obj_melee);
+		scp_melee(obj_melee,c_green);
 	}
 }
 //==================================================================

@@ -178,6 +178,14 @@
             "Key": "455f83ed-37eb-43f5-a9bb-6caf1de7e8d6",
             "Value": {
                 "id": "73b00b2a-815a-41e5-8505-91b164792ec6",
+                "resourcePath": "sprites\\spr_meleeGraphics\\spr_meleeGraphics.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "485868a4-146a-4159-89e5-28bda6c32f86",
+            "Value": {
+                "id": "802a4b35-dbe6-46fe-8141-2ba873243e6d",
                 "resourcePath": "sprites\\spr_knife\\spr_knife.yy",
                 "resourceType": "GMSprite"
             }
@@ -436,6 +444,14 @@
                 "id": "a56b967e-6439-4708-bcbc-32b9a6b8fb23",
                 "resourcePath": "objects\\obj_player\\obj_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9320157e-9d07-4fd0-8fbb-5195c5f1b004",
+            "Value": {
+                "id": "820ffbfe-4e50-454e-9d71-019379f6fbf8",
+                "resourcePath": "sprites\\spr_gun\\spr_gun.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
