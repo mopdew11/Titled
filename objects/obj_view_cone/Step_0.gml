@@ -13,11 +13,13 @@ if(instance_exists(master))
 	y = master.y;
 	
 	
+	
 	if(place_meeting(x,y,obj_player) && !collision_line(master.x,master.y,obj_player.x,obj_player.y,obj_terrain,true,true))
 	{
+		alarm[0] = 600;
 		detected = true;
 	}
-	else detected = false;
+	
 	
 	
 }
