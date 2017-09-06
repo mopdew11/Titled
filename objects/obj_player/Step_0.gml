@@ -24,10 +24,20 @@ if(talking = false)
 //melee
 if(melee = true)
 {
-	if(!instance_exists(obj_melee))
+	switch secondary
 	{
-		audio_play_sound(snd_knife,5,false);
-		scp_melee(obj_melee,c_green);
+		case 1: if(!instance_exists(obj_melee))
+			{
+				audio_play_sound(snd_knife,5,false);
+				scp_melee(obj_melee,c_green,10);
+			}
+			break;
+		case 2: if(!instance_exists(obj_melee))
+			{
+				audio_play_sound(snd_knife,5,false);
+				scp_melee(obj_melee,c_red,20);
+			}
+			break;
 	}
 }
 //==================================================================

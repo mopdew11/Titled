@@ -12,6 +12,7 @@ if(!instance_exists(argument0))
 	instance = instance_create_layer(xDir,yDir, layer, argument0);
 	with(instance)
 	{
+		damage = argument2;
 		dir = obj_player.dir
 		switch dir
 		{

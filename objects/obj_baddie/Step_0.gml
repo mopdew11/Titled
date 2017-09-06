@@ -1,5 +1,4 @@
 /// @description movement
-
 //if it has been 10 frames scince random number was last generated
 if(i > 30)
 {
@@ -26,11 +25,15 @@ else{
 		case 4: break;	
 	}	
 }
+
+//heath check
+if(baddieHealth <= 0)
+{
+	instance_destroy();
+}
+
 //increment frame counter
 i++;
 
-
 //shoot
-
-
 scp_badShoot(baddieDamage);

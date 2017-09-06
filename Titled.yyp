@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0c206c0a-558b-41ab-8d2e-6fde4870b798",
+            "Value": {
+                "id": "7082b8dd-d181-4031-a31f-a44cbd011937",
+                "resourcePath": "objects\\obj_sword\\obj_sword.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "17f9bbdc-11d4-42a2-a5ee-09ff747a94cc",
             "Value": {
                 "id": "e60cf072-3828-4291-b31a-20ce39e28fc1",
@@ -580,6 +588,14 @@
                 "id": "02f47a9e-eee5-4509-8b02-42de9c5fc24d",
                 "resourcePath": "objects\\obj_view_cone\\obj_view_cone.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "cec5fcd6-50aa-4ba3-ae30-3cf0cd9c104a",
+            "Value": {
+                "id": "cc7a6d0c-d661-4887-b34a-c20b2af70b9c",
+                "resourcePath": "views\\cec5fcd6-50aa-4ba3-ae30-3cf0cd9c104a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

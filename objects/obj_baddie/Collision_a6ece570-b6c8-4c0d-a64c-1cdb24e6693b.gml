@@ -1,6 +1,3 @@
-/// @description 
-baddieHealth -= 40;
-if(baddieHealth <= 0)
-{
-	instance_destroy();
-}
+/// @description
+melee = instance_place(x,y,obj_melee); 
+baddieHealth -= melee.damage;
