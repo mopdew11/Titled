@@ -1,6 +1,6 @@
 /// @description HUD
 
-scp_healthV2(playerHealth);
+scp_healthV3();
 
 draw_set_font(fnt_small);
 draw_text(x,y,i);
@@ -8,6 +8,9 @@ draw_text_transformed_color(0,37,playerHealth,5,5,0,c_red,c_red,c_maroon,c_maroo
 
 
 draw_text(100,100,"detected:" + string(detected));
+
+
+
 
 
 //PRIMARY WEAPON

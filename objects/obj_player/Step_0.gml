@@ -87,6 +87,6 @@ if(shoot == 1)
 	scp_shoot(10,1);
 }
 
-
+playerHealth = clamp(playerHealth,0,maxHealth);
 
 
