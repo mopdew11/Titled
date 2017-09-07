@@ -12,14 +12,15 @@ if(!instance_exists(argument0))
 	instance = instance_create_layer(xDir,yDir, layer, argument0);
 	with(instance)
 	{
+		color = argument1;
 		damage = argument2;
 		dir = obj_player.dir
 		switch dir
 		{
-			case "left": draw_sprite_ext(sprite_index,image_index,x,y,1,1,90,argument1,1); break;
-			case "right": draw_sprite_ext(sprite_index,image_index,x,y,1,1,270,argument1,1); break;
-			case "down": draw_sprite_ext(sprite_index,image_index,x,y,1,1,180,argument1,1); break;
-			case "up": draw_sprite_ext(sprite_index,image_index,x,y,1,1,0,argument1,1); break;
+			case "left": draw_sprite_ext(sprite_index,image_index,x,y,1,1,90,color,1); break;
+			case "right": draw_sprite_ext(sprite_index,image_index,x,y,1,1,270,color,1); break;
+			case "down": draw_sprite_ext(sprite_index,image_index,x,y,1,1,180,color,1); break;
+			case "up": draw_sprite_ext(sprite_index,image_index,x,y,1,1,0,color,1); break;
 		}
 	}
 }
