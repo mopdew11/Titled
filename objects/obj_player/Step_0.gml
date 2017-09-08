@@ -8,7 +8,18 @@ right = keyboard_check(ord("D"));
 shoot = mouse_check_button_pressed(mb_left);
 charge = mouse_check_button_pressed(mb_right);
 chargeRelese = mouse_check_button_released(mb_right);
-melee = keyboard_check_pressed(ord("F"));
+meleekey = keyboard_check_pressed(ord("F"));
+inventoryKey = keyboard_check_pressed(vk_tab);
+
+//inventory toggle
+if(inventoryKey == true && inventory = false)
+{
+	inventory = true;
+}
+else if(inventoryKey == true && inventory == true)
+{
+	inventory = false;
+}
 
 //determin what direction the player moves by adding inputs
 //and then multiplying it by movespeed
@@ -22,9 +33,9 @@ if(talking = false)
 
 //==================================================================
 //melee
-if(melee = true)
+if(meleekey == true)
 {
-	switch secondary
+	switch melee
 	{
 		case 1: if(!instance_exists(obj_melee))
 			{

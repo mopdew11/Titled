@@ -5,6 +5,7 @@ sprSpeed = 1;
 display_reset(0, true)
 playerHealth = 100;
 maxHealth = 100;
+defense = 00;
 iHealth = 0;
 //measured in seconds
 invinceTime = 2;
@@ -19,7 +20,10 @@ globalvar detected;
 detected = false;
 dir = "down";
 
+//inventory
+inventory = false;
 
 //weapon selection
-Primary = 0;
-secondary = 1;
+primary = 0;
+secondary = undefined;
+melee = 1;
