@@ -1,4 +1,4 @@
-if(iShoot > sRan && !collision_line(x,y,obj_player.x,obj_player.y,obj_terrain,true,true))
+if(iShoot > sRan && !collision_line(x,y,obj_player.x,obj_player.y,obj_terrain,true,true)&& dead = false)
 {
 	//plays shoot sound
 	audio_play_sound(snd_badShoot,5,false);

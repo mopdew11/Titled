@@ -1,9 +1,8 @@
-/// @description 
-/// @description HUD
+/// @description UI
 
 if(inventory = false)
 {
-	scp_healthV3();
+	scp_healthV4(0,0);
 
 	draw_set_font(fnt_small);
 	draw_text(x,y,i);
@@ -14,13 +13,22 @@ if(inventory = false)
 
 
 	//PRIMARY WEAPON
-	draw_sprite_ext(spr_inventorySlot,1,185,5,2,2,0,c_white,1);
-	draw_sprite_ext(spr_items,primary,185,5,2,2,0,c_white,1);
+	sX = display_get_gui_width() - 144;
 	
+	draw_sprite_ext(spr_inventorySlot,1,sX,8,2,2,0,c_white,1);
+	if(primary != -1)
+		draw_sprite_ext(spr_items,primary,sX,8,2,2,0,c_white,1);
+	
+	//SECONDARY WEAPON
+	sX = display_get_gui_width() - 72;
+	draw_sprite_ext(spr_inventorySlot,0,sX,8,2,2,0,c_white,1);	
+	if(secondary != -1)
+		draw_sprite_ext(spr_items,secondary,sX,8,2,2,0,c_white,1);
 	
 	//MELEE WEAPON
-	draw_sprite_ext(spr_inventorySlot,1,259,5,2,2,0,c_white,1);	
-	draw_sprite_ext(spr_items,melee,259,5,2,2,0,c_white,1);
+	draw_sprite_ext(spr_inventorySlot,1,sX,80,2,2,0,c_white,1);	
+	if(melee != -1)
+		draw_sprite_ext(spr_items,melee,sX,80,2,2,0,c_white,1);
 		
 }
 

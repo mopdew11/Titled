@@ -1,5 +1,6 @@
 /// @description movement
-
+if(dead = false)
+{
 //get inputs
 up = -keyboard_check(ord("W"));
 left = -keyboard_check(ord("A"));
@@ -98,6 +99,16 @@ if(shoot == 1)
 	scp_shoot(10,1);
 }
 
+if(playerHealth <= 0)
+{
+	audio_play_sound(snd_death,1,false);
+	dead = true;
+	alarm[0] = respawnTime;
+}
+
+//keeps player health within boundries
 playerHealth = clamp(playerHealth,0,maxHealth);
-
-
+}else
+{
+	sprite_index = spr_dead;
+}
