@@ -21,7 +21,8 @@ detected = false;
 dir = "down";
 
 //inventory
-inventory = false;
+globalvar inventory;
+inventory = false; 
 
 //weapon selection
 primary = 0;

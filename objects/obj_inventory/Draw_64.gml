@@ -1,5 +1,6 @@
+depth = 0;
 player = instance_nearest(x,y,obj_player);
-if(player.inventory = true)
+if(inventory = true)
 {
 	//gets the center of the veiw 
 	/*
@@ -15,7 +16,7 @@ if(player.inventory = true)
 	xOffset = 40;
 	yOffset = 30;
 
-	for(i = 0; i <= hp; i++)
+	for(i = 0; i < hp; i++)
 	{	
 		draw_sprite(spr_heart, 0,235 + (i*xOffset), yOffset);
 	}
@@ -24,30 +25,33 @@ if(player.inventory = true)
 	draw_set_font(fnt_small);
 	draw_text(392,85,player.defense);
 	
+	//drawinventory slots(moves invisible inventory buttons to the slots)
 	columns = 5;
 	rows = 4;
 	startX = 230;
-	startY = 153;
+	startY = 107;
 	xOffset = 42;
 	yOffset = 46;
 	j = 1;
 	k = 0;
 		
 	for(i =0; i < maxItems; i++)
-	{							
+	{
+		
+		
 		if(i < j * columns)
 		{
-			if(j = 1)
-			{
-				ypos = startY;
-			}else
+			//if(j = 1)
+			//{
+			//	ypos = startY;
+			//}else
 			{
 				ypos = startY + (j * yOffset);
 			}			
 			xpos = startX + (k * xOffset);
-			draw_sprite(spr_items,global.inv[i],xpos,ypos);
-			button[i].x = xpos;
-			button[i].y = ypos;
+			//draw_sprite(spr_items,global.inv[i],xpos,ypos);
+			button[i].startX = xpos;
+			button[i].startY = ypos;
 			k++;
 		}
 		else
@@ -56,14 +60,7 @@ if(player.inventory = true)
 			j++;
 			i--;
 		}
-		
-		
+				
 	}
-	
-	
-	
-	
-	
-
 
 }

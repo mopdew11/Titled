@@ -12,9 +12,10 @@ maxItems = 20;
 
 for(i = 0; i < maxItems; i++)
 {
-	global.inv[i] = 2;
+	global.inv[i] = -1;
 	button[i] = instance_create_depth(0,0,100,obj_invButton);
-	button[i].slot = i;	
+	button[i].slot = i;
+	
 }
 
 globalvar mouseItem;
