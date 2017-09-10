@@ -21,9 +21,9 @@ for(i = 0; i < maxEquipment; i++)
 	eButton[i].slot = i;
 }
 //starting equipment
-eButton[0] = obj_player.primary;
-eButton[1] = obj_player.secondary;
-eButton[2] = obj_player.melee;
+eButton[0].item = obj_player.primary;
+eButton[1].item = obj_player.secondary;
+eButton[2].item = obj_player.melee;
 
 //setup slots for passives
 for(i = 0; i < maxPassives; i++)

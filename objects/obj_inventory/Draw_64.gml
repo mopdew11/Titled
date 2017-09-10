@@ -1,8 +1,8 @@
 depth = 0;
 player = instance_nearest(x,y,obj_player);
-player.primary = eButton[0];
-player.secondary = eButton[1];
-player.melee = eButton[2];
+player.primary = eButton[0].item;
+player.secondary = eButton[1].item;
+player.melee = eButton[2].item;
 if(inventory = true)
 {
 	//draws the inventory screen
