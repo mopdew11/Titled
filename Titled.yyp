@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "524461dd-b3f1-40cc-8271-493b8a189935",
+            "Value": {
+                "id": "5dfd5bb3-166a-4735-a69b-ee1ae0e2c64b",
+                "resourcePath": "objects\\obj_equipButton\\obj_equipButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "53bb7c17-fa13-4376-aa23-4cf7c8dce45d",
             "Value": {
                 "id": "5913882a-ec15-4192-9b14-933e73e0fd87",
@@ -460,6 +468,14 @@
                 "id": "6dc0e8f7-47d5-46b8-8900-092371e7f0a0",
                 "resourcePath": "views\\7a45daff-13a2-48e3-8efb-5caa17b81bb2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7bec6db2-f7a6-4248-9283-2a92b5fc34dd",
+            "Value": {
+                "id": "203a6c5e-c577-4ff1-ae82-41483e063cec",
+                "resourcePath": "objects\\obj_passiveButton\\obj_passiveButton.yy",
+                "resourceType": "GMObject"
             }
         },
         {

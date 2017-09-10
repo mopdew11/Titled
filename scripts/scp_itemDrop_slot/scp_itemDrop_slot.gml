@@ -1,2 +1,2 @@
-//scp_itemDrop_slot(slot)
-global.inv[argument0] = -1;
+//scp_itemDrop_slot(slot,inventory)
+argument1[argument0] = -1;

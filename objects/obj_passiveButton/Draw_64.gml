@@ -1,7 +1,7 @@
 /// @description 
 if(inventory == true)
 {
-	item = global.inv[slot]
+	item = global.pInv[slot]
 	click = mouse_check_button_pressed(mb_left);
 
 
@@ -14,11 +14,11 @@ if(inventory == true)
 		{
 			if (item != -1)
 			{
-				scp_itemDrop_slot(slot,global.inv);
+				scp_itemDrop_slot(slot,global.pInv);
 			}
 			if(mouseItem != -1)
 			{
-				scp_itemPickup_slot(slot,mouseItem,global.inv);
+				scp_itemPickup_slot(slot,mouseItem,global.pInv);
 			}
 			mouseItem = item;
 		}

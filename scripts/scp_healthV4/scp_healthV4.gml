@@ -9,7 +9,7 @@ startY = argument1;
 
 for(i =0; i < 29;i++)
 {
-	if(i<12 || hp != 315)
+	if(i<12)
 	{
 		draw_line(startX + 2,startY +i,startX + hp,startY +i);
 	}else
