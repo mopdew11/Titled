@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "090f4df6-566d-4ebc-a43d-f9bacc7c3764",
+            "Value": {
+                "id": "f00b0a9d-02b8-4594-a670-081bbf94895f",
+                "resourcePath": "objects\\obj_grid\\obj_grid.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "097900f6-a061-4ef5-b357-d76cd046add0",
             "Value": {
                 "id": "625dfaa4-2d1a-47c6-93cb-0357b4600632",
