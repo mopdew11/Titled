@@ -22,6 +22,11 @@ else if(inventoryKey == true && inventory == true)
 	inventory = false;
 }
 
+//equipment
+primary = global.inv[20];
+secondary = global.inv[21];
+melee = global.inv[22];
+
 //determin what direction the player moves by adding inputs
 //and then multiplying it by movespeed
 moveY = (down + up) * movespeed;
@@ -53,7 +58,7 @@ if(meleekey == true)
 	}
 }
 //==================================================================
-//charge shot
+/*charge shot
 if(charge == true)
 {
 	isCharging = true;
@@ -88,7 +93,8 @@ if(isCharging == true && i == maxCharge)
 		audio_play_sound(snd_fullCharge,5,false)
 		fulli = 0;
 	}
-}
+}*/
+scp_chargeShot();
 
 
 //==================================================================

@@ -287,14 +287,6 @@
             }
         },
         {
-            "Key": "524461dd-b3f1-40cc-8271-493b8a189935",
-            "Value": {
-                "id": "5dfd5bb3-166a-4735-a69b-ee1ae0e2c64b",
-                "resourcePath": "objects\\obj_equipButton\\obj_equipButton.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "53bb7c17-fa13-4376-aa23-4cf7c8dce45d",
             "Value": {
                 "id": "5913882a-ec15-4192-9b14-933e73e0fd87",
@@ -471,14 +463,6 @@
             }
         },
         {
-            "Key": "7bec6db2-f7a6-4248-9283-2a92b5fc34dd",
-            "Value": {
-                "id": "203a6c5e-c577-4ff1-ae82-41483e063cec",
-                "resourcePath": "objects\\obj_passiveButton\\obj_passiveButton.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "7f230918-38ad-428d-80fe-6f5a90a1433a",
             "Value": {
                 "id": "b329b5ce-bad9-43e2-a9a4-bb230e649c7c",
@@ -556,6 +540,14 @@
                 "id": "d33f66a4-5107-4645-9747-29b5864a1d0d",
                 "resourcePath": "objects\\obj_olManSpider\\obj_olManSpider.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8e24211a-46dc-46a1-b6d2-047685d441e4",
+            "Value": {
+                "id": "407b2db3-7157-4006-8346-f3aa843accb1",
+                "resourcePath": "scripts\\scp_grid\\scp_grid.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -671,6 +663,14 @@
             }
         },
         {
+            "Key": "b74baca4-d176-40c2-a68f-9857b0d8175b",
+            "Value": {
+                "id": "89027d25-663f-4971-83a8-079ca72a9a16",
+                "resourcePath": "scripts\\scp_chargeShot\\scp_chargeShot.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bc0c7cd9-93b4-4626-970b-8fccc89a1b98",
             "Value": {
                 "id": "9c0e0485-7efc-4465-8184-c3de9cd8b68b",
@@ -700,6 +700,14 @@
                 "id": "fd72305b-8d63-47ce-a85c-2054a1025dff",
                 "resourcePath": "sounds\\snd_knife\\snd_knife.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "cbf8bd83-4d17-4e17-9bfb-3d25de717830",
+            "Value": {
+                "id": "a4840d6a-566a-42f6-aba7-640b52f54a51",
+                "resourcePath": "views\\cbf8bd83-4d17-4e17-9bfb-3d25de717830.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1008,12 +1016,13 @@
         }
     ],
     "script_order": [
-        "2a57b177-ca98-4d15-a40e-a02070a50efc",
         "834834ad-529a-4838-9568-0c2ae3963574",
         "29420ce3-244b-4d31-8676-63aae15f919d",
-        "04a5ac6e-6f64-4acd-b99f-4b4857095e64",
-        "eda356a7-7309-4291-b9fb-b47006f68186",
         "4c5adc3b-1365-4998-814a-896bc57b9d56",
+        "eda356a7-7309-4291-b9fb-b47006f68186",
+        "2a57b177-ca98-4d15-a40e-a02070a50efc",
+        "04a5ac6e-6f64-4acd-b99f-4b4857095e64",
+        "b74baca4-d176-40c2-a68f-9857b0d8175b",
         "53bb7c17-fa13-4376-aa23-4cf7c8dce45d",
         "e7166a8f-eb47-472a-bb8d-e7ebec9d92c0",
         "e6bafe24-83e7-485c-892a-9dec85a72eda",
@@ -1021,7 +1030,8 @@
         "d618db2c-89ea-4bae-bfc0-69b8c3a765ef",
         "5100894b-0d26-4b26-97ac-f5294eebec25",
         "064b8368-3c90-43c1-b218-d6ebd4b6f0d5",
-        "39bfb44b-2467-4d53-981b-2b9bb1a87acb"
+        "39bfb44b-2467-4d53-981b-2b9bb1a87acb",
+        "8e24211a-46dc-46a1-b6d2-047685d441e4"
     ],
     "tutorial": ""
 }

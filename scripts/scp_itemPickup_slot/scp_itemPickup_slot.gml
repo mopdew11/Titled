@@ -1,7 +1,7 @@
-//scr_itemPickup_slot(slot,itemID,inv);
-if(argument2[argument0] == -1)
+//scr_itemPickup_slot(slot,itemID);
+if(global.inv[argument0] == -1)
 {
-	argument2[argument0] = argument1;
+	global.inv[argument0] = argument1;
 	return true;
 }
 return false;
