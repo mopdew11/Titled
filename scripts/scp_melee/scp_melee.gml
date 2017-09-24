@@ -9,7 +9,7 @@ if(!instance_exists(argument0))
 		case "left": xDir = x - 12; yDir = y; break;
 	}
 
-	instance = instance_create_layer(xDir,yDir, layer, argument0);
+	instance = instance_create_depth(xDir,yDir, 0, argument0);
 	with(instance)
 	{
 		color = argument1;

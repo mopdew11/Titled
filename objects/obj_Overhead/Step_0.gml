@@ -13,11 +13,19 @@ if(keyboard_check_pressed(ord("F")))
 }
 */
 //close window
-if(keyboard_check(vk_escape))
+if(inventory != true)
 {
-	game_end();
+	if(keyboard_check_pressed(vk_escape))
+	{
+		game_end();
+	}
+}else
+{
+	if(keyboard_check_pressed(vk_escape))
+	{
+		inventory = false;
+	}
 }
-
 //reset room
 if(!instance_exists(obj_player))
 {

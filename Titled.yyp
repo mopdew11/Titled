@@ -98,7 +98,7 @@
             "Key": "0c206c0a-558b-41ab-8d2e-6fde4870b798",
             "Value": {
                 "id": "7082b8dd-d181-4031-a31f-a44cbd011937",
-                "resourcePath": "objects\\obj_sword\\obj_sword.yy",
+                "resourcePath": "objects\\obj_item\\obj_item.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -146,7 +146,15 @@
             "Key": "2a57b177-ca98-4d15-a40e-a02070a50efc",
             "Value": {
                 "id": "4643db8a-a2d1-44c9-ab44-511314ce686e",
-                "resourcePath": "scripts\\scp_shoot\\scp_shoot.yy",
+                "resourcePath": "scripts\\scp_alienGun\\scp_alienGun.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2b6b3bff-529f-48d7-a795-7b6880c1138d",
+            "Value": {
+                "id": "5f395ba2-52f6-4afa-b6ab-5a5f074e89c0",
+                "resourcePath": "scripts\\scp_startingGun\\scp_startingGun.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -196,6 +204,14 @@
                 "id": "54740767-dc19-4caf-a459-c886c71e292a",
                 "resourcePath": "scripts\\scp_itemDrop_slot\\scp_itemDrop_slot.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3a21f446-b2e4-41a3-8891-110dd22c865c",
+            "Value": {
+                "id": "231c8aff-0749-4b81-b033-db9e48c94b02",
+                "resourcePath": "views\\3a21f446-b2e4-41a3-8891-110dd22c865c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -402,7 +418,7 @@
             "Key": "7159d243-d11a-4630-b800-2e25d7b5c13f",
             "Value": {
                 "id": "9f27cd4e-a875-4a32-a9a9-33d8b493a507",
-                "resourcePath": "sprites\\spr_inventorySlot\\spr_inventorySlot.yy",
+                "resourcePath": "sprites\\spr_select\\spr_select.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -527,6 +543,14 @@
             }
         },
         {
+            "Key": "88d506fd-4dba-4934-a648-aa7498007a89",
+            "Value": {
+                "id": "98c4b90d-3dce-4dfa-8130-4e606239127c",
+                "resourcePath": "sprites\\spr_bullet\\spr_bullet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "89b24fa4-5abc-4e2d-9803-6b2a8b4fffe9",
             "Value": {
                 "id": "a822bf14-c373-4544-b8a0-cbd9d7b05fbc",
@@ -615,6 +639,14 @@
             }
         },
         {
+            "Key": "9e4e15be-c6d1-4489-8732-2dc726c5fe37",
+            "Value": {
+                "id": "a9de4ce7-d193-45a6-b5ff-fe5f52e96c38",
+                "resourcePath": "objects\\obj_bullet\\obj_bullet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a1d04d9f-376b-4599-b9bf-6d2dbd8f056e",
             "Value": {
                 "id": "243ff13a-6653-4839-998f-f2ff8e2e5def",
@@ -663,19 +695,19 @@
             }
         },
         {
+            "Key": "b4dc965c-4dcb-41e9-983a-7df2eb6fe15d",
+            "Value": {
+                "id": "96dcaf45-35d0-40a0-9f81-fd47188ea071",
+                "resourcePath": "sprites\\spr_inventorySlot\\spr_inventorySlot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b52898a1-ba9b-4f6d-9cde-25972a65324e",
             "Value": {
                 "id": "c007502e-bb37-4b83-b13d-3af01542431b",
                 "resourcePath": "objects\\obj_text\\obj_text.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "b74baca4-d176-40c2-a68f-9857b0d8175b",
-            "Value": {
-                "id": "89027d25-663f-4971-83a8-079ca72a9a16",
-                "resourcePath": "scripts\\scp_chargeShot\\scp_chargeShot.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1007,6 +1039,14 @@
             }
         },
         {
+            "Key": "fcfe79f4-f140-44d6-9c97-530bf0c1b7c5",
+            "Value": {
+                "id": "99d199b8-3dc1-40b1-919c-27a8c21e63bb",
+                "resourcePath": "scripts\\scp_charge2\\scp_charge2.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fed5b771-d9a6-42f8-a1f0-83e3cb6cfdb9",
             "Value": {
                 "id": "71fe8c7b-2650-4cf8-ae20-007d392bf988",
@@ -1027,10 +1067,11 @@
         "834834ad-529a-4838-9568-0c2ae3963574",
         "29420ce3-244b-4d31-8676-63aae15f919d",
         "4c5adc3b-1365-4998-814a-896bc57b9d56",
-        "eda356a7-7309-4291-b9fb-b47006f68186",
+        "fcfe79f4-f140-44d6-9c97-530bf0c1b7c5",
         "2a57b177-ca98-4d15-a40e-a02070a50efc",
+        "eda356a7-7309-4291-b9fb-b47006f68186",
+        "2b6b3bff-529f-48d7-a795-7b6880c1138d",
         "04a5ac6e-6f64-4acd-b99f-4b4857095e64",
-        "b74baca4-d176-40c2-a68f-9857b0d8175b",
         "53bb7c17-fa13-4376-aa23-4cf7c8dce45d",
         "e7166a8f-eb47-472a-bb8d-e7ebec9d92c0",
         "e6bafe24-83e7-485c-892a-9dec85a72eda",

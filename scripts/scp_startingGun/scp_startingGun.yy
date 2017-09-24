@@ -1,8 +1,8 @@
 {
-    "id": "b74baca4-d176-40c2-a68f-9857b0d8175b",
+    "id": "2b6b3bff-529f-48d7-a795-7b6880c1138d",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scp_chargeShot",
+    "name": "scp_startingGun",
     "IsCompatibility": false,
     "IsDnD": false
 }

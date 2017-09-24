@@ -12,7 +12,7 @@ k = 0;
 for(i =0; i < maxItems; i++)
 {
 	if(i < j * columns)
-	{			
+	{
 		ypos = startY + (j * yOffset);
 		xpos = startX + (k * xOffset);
 		button[i].startX = xpos;

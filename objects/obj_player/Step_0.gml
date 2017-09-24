@@ -27,6 +27,31 @@ primary = global.inv[20];
 secondary = global.inv[21];
 melee = global.inv[22];
 
+//select up
+if mouse_wheel_up()
+{
+	if(selected = 1)
+	{
+		selected = 0;
+	}
+	else
+	{
+		selected = 1;
+	}
+}
+//select down
+if mouse_wheel_down()
+{
+	if(selected = 1)
+	{
+		selected = 0;
+	}
+	else
+	{
+		selected = 1;
+	}
+}
+
 //determin what direction the player moves by adding inputs
 //and then multiplying it by movespeed
 moveY = (down + up) * movespeed;
@@ -57,53 +82,36 @@ if(meleekey == true)
 			break;
 	}
 }
-//==================================================================
-/*charge shot
-if(charge == true)
+//alt fire
+if(selected == 0)
 {
-	isCharging = true;
-	audio_play_sound(snd_charge,5,false);
-	shoot = 0;
-	obj_charge.sprite_index = spr_charge;
-}
-if(chargeRelese == true)
-{
-	isCharging = false;
-	audio_stop_sound(snd_charge);
-	audio_play_sound(snd_shoot,5,false);
-	scp_shoot(i,i/15);
-	i = 0;
-	obj_charge.sprite_index = spr_tBubble;
-}
-if(isCharging == true && i < maxCharge)
-{
-	obj_charge.sprite_index = spr_charge;
-	shoot = false;
-	i++;
-}
-if(isCharging == true && i == maxCharge)
-{
-	obj_charge.sprite_index = spr_charge;
-	shoot = false;
-	if(fulli < 15)
+	switch primary
 	{
-		fulli++;
-	}else
-	{
-		audio_play_sound(snd_fullCharge,5,false)
-		fulli = 0;
+		case 0: scp_charge2(); break;
+		default: break;
 	}
-}*/
-scp_chargeShot();
-
-
-//==================================================================
-//shooting
-if(shoot == 1)
-{
-	audio_play_sound(snd_shoot,5,false);
-	scp_shoot(10,1);
 }
+//==================================================================
+//primary shooting
+if(shoot == 1 && selected == 0)
+{
+	switch primary
+	{
+		case 0: audio_play_sound(snd_shoot,5,false); scp_alienGun(10,1); break;
+		case 3: audio_play_sound(snd_badShoot,5,false); scp_startingGun(5); break;
+		default: break;
+	}
+}
+
+//secondary shooting
+if(shoot == 1 && selected == 1)
+{
+	switch secondary
+	{
+		case 3: audio_play_sound(snd_badShoot,5,false); scp_startingGun(5); break; 
+	}
+}
+
 
 if(playerHealth <= 0)
 {

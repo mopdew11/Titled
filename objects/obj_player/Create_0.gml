@@ -19,13 +19,17 @@ iHealth = 0;
 invinceTime = 2;
 invincible = false;
 isDead = false;
+
+
 isCharging = false;
-i = 0;
+j = 16;
 maxCharge = 45;
-fulli = 16;
+chargeVal = 0;
+
 talking = false;
 globalvar detected;
 detected = false;
+
 dir = "down";
 prev = 315;
 
@@ -34,6 +38,7 @@ globalvar inventory;
 inventory = false; 
 
 //weapon selection
-primary = 0;
-secondary = -1;
+selected = 1;
+primary = -1;
+secondary = 3;
 melee = 1;

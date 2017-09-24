@@ -2,9 +2,10 @@
 /*
 itemID's
 empty = -1
-starting pistol = 0
+alien gun = 0
 starting knife = 1
 sword = 2
+starting pistol = 3
 */
 
 globalvar maxItems;//number of inventory spaces

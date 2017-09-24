@@ -14,6 +14,10 @@ if(detected == true)
 
 if(baddieHealth <= 0)
 {
-	instance_create_layer(x,y,layer,obj_sword);
+	inst = instance_create_layer(x,y,layer,obj_item);
+	with(inst)
+	{
+		ID = instance_nearest(x,y,obj_baddie_guard).item;
+	}
 	instance_destroy();
 }

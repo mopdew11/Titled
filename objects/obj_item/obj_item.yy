@@ -2,7 +2,7 @@
     "id": "0c206c0a-558b-41ab-8d2e-6fde4870b798",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_sword",
+    "name": "obj_item",
     "eventList": [
         {
             "id": "f70b2a48-95ee-4913-99fd-7552efa39fe4",
