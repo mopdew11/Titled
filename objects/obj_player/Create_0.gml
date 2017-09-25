@@ -6,6 +6,7 @@ respawnTime = 3 * room_speed;
 respawnX = x;
 respawnY = y;
 
+counter = 1;
 
 //other things
 movespeed = 5;
@@ -35,7 +36,7 @@ prev = 315;
 
 //inventory
 globalvar inventory;
-inventory = false; 
+inventory = false;
 
 //weapon selection
 selected = 1;
