@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "47de5f2e-354f-47f1-834e-69922c487b37",
+            "Value": {
+                "id": "a6e3b84f-009d-4213-a042-10cafc28aa5e",
+                "resourcePath": "objects\\obj_pathfinder\\obj_pathfinder.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "485868a4-146a-4159-89e5-28bda6c32f86",
             "Value": {
                 "id": "802a4b35-dbe6-46fe-8141-2ba873243e6d",
