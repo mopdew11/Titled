@@ -7,13 +7,10 @@ if(detected == true)
 	if(!collision_line(x,y,obj_player.x,obj_player.y,obj_terrain,true,false) && alarm[1] == -1)
 	{
 		pX = (obj_player.x div 16) * 16 + 8;
-		pY = (obj_player.y div 16) * 16 + 8;
+		pY = (obj_player.y div 16) * 16 + 8
 		alarm[1] = 15;
 	}
 }
-	
-	
-
 
 if(baddieHealth <= 0)
 {
@@ -24,4 +21,3 @@ if(baddieHealth <= 0)
 	}
 	instance_destroy();
 }
-

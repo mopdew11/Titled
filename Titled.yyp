@@ -55,14 +55,6 @@
             }
         },
         {
-            "Key": "077a0f59-c50c-44a9-a404-8a85b28bfb8e",
-            "Value": {
-                "id": "12884bc4-17e1-47ea-9476-665f8af8f3d5",
-                "resourcePath": "scripts\\scp_windowToggle\\scp_windowToggle.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "090f4df6-566d-4ebc-a43d-f9bacc7c3764",
             "Value": {
                 "id": "f00b0a9d-02b8-4594-a670-081bbf94895f",
@@ -1088,8 +1080,7 @@
         "5100894b-0d26-4b26-97ac-f5294eebec25",
         "064b8368-3c90-43c1-b218-d6ebd4b6f0d5",
         "39bfb44b-2467-4d53-981b-2b9bb1a87acb",
-        "8e24211a-46dc-46a1-b6d2-047685d441e4",
-        "077a0f59-c50c-44a9-a404-8a85b28bfb8e"
+        "8e24211a-46dc-46a1-b6d2-047685d441e4"
     ],
     "tutorial": ""
 }
