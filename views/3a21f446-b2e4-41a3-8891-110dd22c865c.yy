@@ -7,7 +7,8 @@
         "fcfe79f4-f140-44d6-9c97-530bf0c1b7c5",
         "2a57b177-ca98-4d15-a40e-a02070a50efc",
         "eda356a7-7309-4291-b9fb-b47006f68186",
-        "2b6b3bff-529f-48d7-a795-7b6880c1138d"
+        "2b6b3bff-529f-48d7-a795-7b6880c1138d",
+        "4e77618c-2a35-4a8c-abd2-8b7891b7b884"
     ],
     "filterType": "GMScript",
     "folderName": "weapons",

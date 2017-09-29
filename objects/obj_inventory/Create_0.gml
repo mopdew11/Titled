@@ -6,6 +6,7 @@ alien gun = 0
 starting knife = 1
 sword = 2
 starting pistol = 3
+shgotgun = 4
 */
 
 globalvar maxItems;//number of inventory spaces
@@ -18,7 +19,7 @@ for(i = 0; i < maxItems; i++)
 	button[i] = instance_create_layer(0,0,layer,obj_invButton);
 	button[i].slot = i;
 }
-global.inv[0] = 1;//test item
+global.inv[0] = 4;//test item
 
 maxEquipment = maxItems + 3;
 //setup slots for equipment
