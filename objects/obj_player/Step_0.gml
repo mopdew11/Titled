@@ -11,7 +11,7 @@ if(dead = false)
 	chargeRelese = mouse_check_button_released(mb_right);
 	meleekey = keyboard_check_pressed(ord("F"));
 	inventoryKey = keyboard_check_pressed(vk_tab);
-
+	reload = keyboard_check_pressed(ord("R"));
 	//inventory toggle
 	if(inventoryKey == true && inventory = false)
 	{
@@ -52,6 +52,15 @@ if(dead = false)
 		}
 	}
 
+	//ammo set
+	scp_maxAmmo(selected);
+	
+	//reload
+	if(reload)
+	{
+		scp_reload();
+	}
+
 	//determin what direction the player moves by adding inputs
 	//and then multiplying it by movespeed
 	moveY = (down + up) * movespeed;
@@ -64,7 +73,7 @@ if(dead = false)
 
 	//==================================================================
 	//melee
-	if(meleekey == true)
+	if(meleekey == true && meleeAmmo != 0)
 	{
 		switch melee
 		{
@@ -93,31 +102,22 @@ if(dead = false)
 	}
 	//==================================================================
 	//primary shooting
-	if(shoot == 1 && selected == 0)
+	if(shoot == 1 && selected == 0 && primaryAmmo != 0)
 	{
 		switch primary
 		{
-			case 0: audio_play_sound(snd_shoot,5,false); scp_alienGun(10,1); break;
-			case 4: if(counter <= 2)
-					{
-						scp_shotgun(5);
-						counter++;
-					}else
-					{
-						if(alarm[1] == -1)
-							alarm[1] = room_speed/2;
-					}
-					break;
+			case 0: audio_play_sound(snd_shoot,5,false); scp_alienGun(10,1);primaryAmmo--; break;
+			case 4:	scp_shotgun(5); primaryAmmo--; break;
 			default: break;
 		}
 	}
 
 	//secondary shooting
-	if(shoot == 1 && selected == 1)
+	if(shoot == 1 && selected == 1 && secondaryAmmo != 0)
 	{
 		switch secondary
 		{
-			case 3: audio_play_sound(snd_badShoot,5,false); scp_startingGun(5); break; 
+			case 3: audio_play_sound(snd_badShoot,5,false); secondaryAmmo--; scp_startingGun(5); break; 
 		}
 	}
 

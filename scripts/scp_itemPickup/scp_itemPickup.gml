@@ -1,4 +1,4 @@
-//scp_itemPickup(itemID);
+//scp_itemPickup(itemID,canStack);
 for(i = 0; i < maxItems; i ++)
 {
 	// if slot i is empty

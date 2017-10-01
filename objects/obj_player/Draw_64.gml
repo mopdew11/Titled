@@ -11,6 +11,20 @@ if(inventory = false)
 
 	draw_text(100,100,"detected:" + string(detected));
 
+	//AMMO
+	switch selected
+	{
+		case 0: ammo = primaryAmmo; break;
+		case 1: ammo = secondaryAmmo; break;
+	}
+	draw_set_font(fnt_large);
+	draw_set_color(c_white);
+	yy = window_get_height() - string_height(string(ammo) + "/" + string(maxAmmo)) - 10;
+	xx = window_get_width() - string_width(string(ammo) + "/" + string(maxAmmo)) -20;
+	draw_text(xx,yy,string(ammo) + "/" + string(maxAmmo));
+	
+	
+
 
 	//PRIMARY WEAPON
 	sX = display_get_gui_width() - 144;

@@ -10,17 +10,69 @@ if(inventory == true)
 	{
 		draw_set_color(c_green);
 		draw_rectangle(startX,startY,startX+32,startY+32,0);
+		draw_set_font(fnt_large);
+		draw_set_color(c_white);
 		if(click)
 		{
-			if (item != -1)
+			
+			if(slot == 20)
 			{
-				scp_itemDrop_slot(slot);
+				if(scp_searchArray(obj_inventory.primaryArray,mouseItem) != false || mouseItem == -1)
+				{
+					if (item != -1)
+				{
+					scp_itemDrop_slot(slot);
+				}
+				if(mouseItem != -1)
+				{
+					scp_itemPickup_slot(slot,mouseItem);
+				}
+				mouseItem = item;
+				}
 			}
-			if(mouseItem != -1)
+			else if(slot == 21)
 			{
-				scp_itemPickup_slot(slot,mouseItem);
+				if(scp_searchArray(obj_inventory.secondaryArray,mouseItem) != false || mouseItem == -1)
+				{
+					if (item != -1)
+				{
+					scp_itemDrop_slot(slot);
+				}
+				if(mouseItem != -1)
+				{
+					scp_itemPickup_slot(slot,mouseItem);
+				}
+				mouseItem = item;
+				}
 			}
-			mouseItem = item;
+			else if(slot == 22)
+			{
+				if(scp_searchArray(obj_inventory.meleeArray,mouseItem) != false || mouseItem == -1)
+				{
+					if (item != -1)
+				{
+					scp_itemDrop_slot(slot);
+				}
+				if(mouseItem != -1)
+				{
+					scp_itemPickup_slot(slot,mouseItem);
+				}
+				mouseItem = item;
+				}
+			}
+			else
+			{
+				if (item != -1)
+				{
+					scp_itemDrop_slot(slot);
+				}
+				if(mouseItem != -1)
+				{
+					scp_itemPickup_slot(slot,mouseItem);
+				}
+				mouseItem = item;
+			}
+			
 		}
 	}
 	depth = -100;

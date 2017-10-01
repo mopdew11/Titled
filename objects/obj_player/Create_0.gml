@@ -43,3 +43,10 @@ selected = 1;
 primary = -1;
 secondary = 3;
 melee = 1;
+
+//ammo
+primaryAmmo = 0;
+secondaryAmmo = 50;
+meleeAmmo = -1;
+
+maxAmmo = 50;

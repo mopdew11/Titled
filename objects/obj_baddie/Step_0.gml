@@ -29,6 +29,12 @@ else{
 //heath check
 if(baddieHealth <= 0)
 {
+	if(ran > 1)
+	{
+		ammo = instance_create_depth(x,y,depth,obj_item);
+		ammo.ID = 5;
+		ammo.stack = true;
+	}
 	instance_destroy();
 }
 

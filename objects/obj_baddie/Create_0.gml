@@ -7,3 +7,4 @@ iShoot = 0;
 sRan = irandom_range(10, 60);
 baddieHealth = 10;
 baddieDamage = 10;
+ran = irandom_range(0,3);
