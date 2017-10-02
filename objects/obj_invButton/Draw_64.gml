@@ -80,7 +80,7 @@ if(inventory == true)
 	{
 		if(item != -1)
 		{
-			draw_sprite(spr_items,item,startX,startY);
+			draw_sprite(spr_items,item,startX + spriteAdd,startY + spriteAdd);
 		}
 	}
 }

@@ -50,3 +50,5 @@ secondaryAmmo = 50;
 meleeAmmo = -1;
 
 maxAmmo = 50;
+
+spriteAdd = 32;
