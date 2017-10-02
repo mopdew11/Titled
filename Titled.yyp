@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "498df99a-10ce-443c-917b-1fd4b72e4cd6",
+            "Value": {
+                "id": "f84f5394-610e-4193-8590-9a3224061a8f",
+                "resourcePath": "scripts\\scp_yCol\\scp_yCol.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4a3cfcc7-2f0c-435d-a119-772d2447ae25",
             "Value": {
                 "id": "60706b5e-ff97-425d-ab1d-b3e718bc18d2",
@@ -815,6 +823,14 @@
             }
         },
         {
+            "Key": "ba4a9c67-e8be-4851-9224-d6eb1732622b",
+            "Value": {
+                "id": "3b18699a-1147-4066-92bf-032249ae5dee",
+                "resourcePath": "scripts\\scp_xCol\\scp_xCol.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bc0c7cd9-93b4-4626-970b-8fccc89a1b98",
             "Value": {
                 "id": "9c0e0485-7efc-4465-8184-c3de9cd8b68b",
@@ -1203,6 +1219,8 @@
         "5100894b-0d26-4b26-97ac-f5294eebec25",
         "064b8368-3c90-43c1-b218-d6ebd4b6f0d5",
         "39bfb44b-2467-4d53-981b-2b9bb1a87acb",
+        "ba4a9c67-e8be-4851-9224-d6eb1732622b",
+        "498df99a-10ce-443c-917b-1fd4b72e4cd6",
         "8e24211a-46dc-46a1-b6d2-047685d441e4",
         "7894ee11-0c30-46fa-b103-1c54e48a96ed"
     ],
