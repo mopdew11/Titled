@@ -52,4 +52,3 @@ for(i = maxEquipment; i < maxPassives; i++)
 globalvar mouseItem;
 mouseItem = -1;
 instance_create_layer(0,0,layer,obj_mouseItem);
-
