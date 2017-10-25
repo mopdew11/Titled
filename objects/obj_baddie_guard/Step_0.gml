@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if(detected == true)
 {
-	scp_badShoot(baddieDamage,3);
+	scp_badShoot(baddieDamage,1.5);
 	
 	if(!collision_line(x,y,obj_player.x,obj_player.y,obj_terrain,true,false) && alarm[1] == -1)
 	{

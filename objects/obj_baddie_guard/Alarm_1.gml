@@ -4,5 +4,5 @@
 
 if(mp_grid_path(global.enemyGrid,enemyPath,x,y,pX,pY,1))
 {
-	path_start(enemyPath,4,path_action_stop,false);
+	path_start(enemyPath,3,path_action_stop,false);
 }

@@ -40,7 +40,7 @@ if(baddieHealth <= 0)
 				break;
 		case 1: if (ran > 1)
 				{
-					scp_dropItemExt(8,"shotgun shells", "I can't think of somehting clever to say about this", dropNum2,-2,-2,-2);
+					scp_dropItemExt(8,"shotgun shells", "she sells shotgun shells at the shotgun store\n..eh...doesn't have the same ring to it", dropNum2,-2,-2,-2);
 				}
 				instance_destroy();
 				break;
