@@ -14,10 +14,6 @@ if(detected == true)
 
 if(baddieHealth <= 0)
 {
-	inst = instance_create_layer(x,y,layer,obj_item);
-	with(inst)
-	{
-		ID = instance_nearest(x,y,obj_baddie_guard).item;
-	}
+	scp_dropItemExt(item,iName,iInfo,stack,ammoType,ammo,maxAmmo);
 	instance_destroy();
 }

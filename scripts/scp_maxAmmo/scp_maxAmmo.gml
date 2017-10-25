@@ -5,6 +5,7 @@ if(argument0 = 0)
 	{
 		case 0:maxAmmo = 20; break
 		case 4: maxAmmo = 2; break;
+		case 7: maxAmmo = 6; break;
 		default: break;
 	}
 }else
@@ -12,5 +13,6 @@ if(argument0 = 0)
 	switch secondary
 	{
 		case 3: maxAmmo = 50;break;
+		default: break;
 	}
 }

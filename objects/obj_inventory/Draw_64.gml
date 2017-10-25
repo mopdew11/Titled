@@ -33,8 +33,8 @@ if(inventory = true)
 			ypos = startY + (j * yOffset);
 			xpos = startX + (k * xOffset);
 			//draw_sprite(spr_items,global.inv[i],xpos,ypos);
-			button[i].startX = xpos;
-			button[i].startY = ypos;
+			global.button[i].startX = xpos;
+			global.button[i].startY = ypos;
 			k++;
 		}
 		else
@@ -63,8 +63,8 @@ if(inventory = true)
 		{
 			ypos = startY + (j * yOffset);
 			xpos = startX + (k * xOffset);
-			button[i].startX = xpos;
-			button[i].startY = ypos;
+			global.button[i].startX = xpos;
+			global.button[i].startY = ypos;
 			k++;
 		}
 		else
@@ -75,40 +75,40 @@ if(inventory = true)
 		}
 	}*/
 	//first equipmet slot
-	button[20].startX = 165;
-	button[20].startY = 91;
+	global.button[20].startX = 165;
+	global.button[20].startY = 91;
 
 	//second equipmet slot	
-	button[21].startX = 211;
-	button[21].startY = 91;
+	global.button[21].startX = 211;
+	global.button[21].startY = 91;
 	
 	//third equipmet slot
-	button[22].startX = 165;
-	button[22].startY = 143;
+	global.button[22].startX = 165;
+	global.button[22].startY = 143;
 	
 	//draw passives inventory slots(moves invisible inventory buttons to the slots)
 	//first
-	button[23].startX = 20;
-	button[23].startY = 246;
+	global.button[23].startX = 20;
+	global.button[23].startY = 246;
 	
 	//second
-	button[24].startX = 62;
-	button[24].startY = 246;
+	global.button[24].startX = 62;
+	global.button[24].startY = 246;
 	
 	//third
-	button[25].startX = 104;
-	button[25].startY = 246;
+	global.button[25].startX = 104;
+	global.button[25].startY = 246;
 	
 	//4
-	button[26].startX = 20;
-	button[26].startY = 292;
+	global.button[26].startX = 20;
+	global.button[26].startY = 292;
 	
 	//5
-	button[27].startX = 62;
-	button[27].startY = 292;
+	global.button[27].startX = 62;
+	global.button[27].startY = 292;
 	
 	//6
-	button[28].startX = 104;
-	button[28].startY = 292;
+	global.button[28].startX = 104;
+	global.button[28].startY = 292;
 	
 }

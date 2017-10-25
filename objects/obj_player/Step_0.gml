@@ -23,9 +23,9 @@ if(dead = false)
 	}
 
 	//equipment
-	primary = global.inv[20];
-	secondary = global.inv[21];
-	melee = global.inv[22];
+	primary = global.inv[0,20];
+	secondary = global.inv[0,21];
+	melee = global.inv[0,22];
 
 	//select up
 	if mouse_wheel_up()
@@ -53,12 +53,13 @@ if(dead = false)
 	}
 
 	//ammo set
-	scp_maxAmmo(selected);
+	pMaxAmmo = global.inv[6,20];
+	sMaxAmmo = global.inv[6,21];
 	
 	//reload
 	if(reload)
 	{
-		scp_reload();
+		scp_reload(selected);
 	}
 
 	//determin what direction the player moves by adding inputs
@@ -77,16 +78,21 @@ if(dead = false)
 	{
 		switch melee
 		{
-			case 1: if(!instance_exists(obj_melee))
+			case 1: if(!instance_exists(obj_meleeParent))
 				{
 					audio_play_sound(snd_knife,5,false);
 					scp_melee(obj_melee,c_green,10);
 				}
 				break;
-			case 2: if(!instance_exists(obj_melee))
+			case 2: if(!instance_exists(obj_meleeParent))
 				{
 					audio_play_sound(snd_knife,5,false);
 					scp_melee(obj_melee,c_red,20);
+				}
+			case 6: if(!instance_exists(obj_meleeParent))
+				{
+					audio_play_sound(snd_knife,5,false);
+					scp_lightBlade(30);
 				}
 				break;
 		}
@@ -94,30 +100,34 @@ if(dead = false)
 	//alt fire
 	if(selected == 0)
 	{
-		switch primary
+		if(primaryAmmo != 0)
 		{
-			case 0: scp_charge2(); break;
-			default: break;
+			switch primary
+			{
+				case 0: scp_charge2(); break;
+				default: break;
+			}
 		}
 	}
 	//==================================================================
 	//primary shooting
-	if(shoot == 1 && selected == 0 && primaryAmmo != 0)
+	if(shoot == 1 && selected == 0 && global.inv[5,20] > 0)
 	{
 		switch primary
 		{
-			case 0: audio_play_sound(snd_shoot,5,false); scp_alienGun(10,1);primaryAmmo--; break;
-			case 4:	scp_shotgun(5); primaryAmmo--; break;
+			case 0: audio_play_sound(snd_shoot,5,false); scp_alienGun(10,1); global.inv[5,20]--; break;
+			case 4:	scp_shotgun(5); global.inv[5,20]--; break;
+			case 7: scp_grenadeLauncher(50,3,15,1.1); global.inv[5,20]--;break;
 			default: break;
 		}
 	}
 
 	//secondary shooting
-	if(shoot == 1 && selected == 1 && secondaryAmmo != 0)
+	if(shoot == 1 && selected == 1 && global.inv[5,21] > 0)
 	{
 		switch secondary
 		{
-			case 3: audio_play_sound(snd_badShoot,5,false); secondaryAmmo--; scp_startingGun(5); break; 
+			case 3: audio_play_sound(snd_badShoot,5,false); global.inv[5,21]--; scp_startingGun(5); break; 
 		}
 	}
 

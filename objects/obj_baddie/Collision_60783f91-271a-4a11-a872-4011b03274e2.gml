@@ -1,0 +1,2 @@
+/// @description 
+baddieHealth -= other.damage;

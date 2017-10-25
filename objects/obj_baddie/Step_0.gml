@@ -5,6 +5,7 @@ if(i > 30)
 	//generate a new random number
 	ran = irandom_range(0,4);
 	
+	
 	//reset frame counter
 	i = 0;
 }
@@ -29,13 +30,21 @@ else{
 //heath check
 if(baddieHealth <= 0)
 {
-	if(ran > 1)
+	switch dropItem
 	{
-		ammo = instance_create_depth(x,y,depth,obj_item);
-		ammo.ID = 5;
-		ammo.stack = true;
+		case 0: if(ran > 1)
+				{
+					scp_dropItemExt(5,"ammo","what do I do with this? throw it at 'em?", dropNum,-2,-2,-2);
+				}
+				instance_destroy();
+				break;
+		case 1: if (ran > 1)
+				{
+					scp_dropItemExt(8,"shotgun shells", "I can't think of somehting clever to say about this", dropNum2,-2,-2,-2);
+				}
+				instance_destroy();
+				break;
 	}
-	instance_destroy();
 }
 
 //increment frame counter

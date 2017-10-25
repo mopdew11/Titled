@@ -1,4 +1,8 @@
 /// @description 
 ID = 0;
-scp_xCol();
-scp_yCol();
+var name;
+var info;
+var stack;
+var ammoType;//-2 = void
+var ammo;//-2 = void
+var maxAmmo;//-2 = void

@@ -1,7 +1,14 @@
 /// @description 
 if(inventory == true)
 {
-	item = global.inv[slot]
+	item = global.inv[0,slot];
+	name = global.inv[1,slot];
+	info = global.inv[2,slot];
+	stack = global.inv[3,slot];
+	ammoType = global.inv[4,slot];
+	ammo = global.inv[5,slot];
+	maxAmmo = global.inv[6,slot];
+	
 	click = mouse_check_button_pressed(mb_left);
 
 
@@ -25,9 +32,12 @@ if(inventory == true)
 				}
 				if(mouseItem != -1)
 				{
-					scp_itemPickup_slot(slot,mouseItem);
+					scp_itemPickup_slot(slot,mouseItem,mouseName,mouseInfo,mouseStack,mouseAmmoType,mouseAmmo,mouseMaxAmmo);
 				}
 				mouseItem = item;
+				mouseInfo = info;
+				mouseName = name;
+				mouseStack = stack;
 				}
 			}
 			else if(slot == 21)
@@ -40,9 +50,12 @@ if(inventory == true)
 				}
 				if(mouseItem != -1)
 				{
-					scp_itemPickup_slot(slot,mouseItem);
+					scp_itemPickup_slot(slot,mouseItem,mouseName,mouseInfo,mouseStack,mouseAmmoType,mouseAmmo,mouseMaxAmmo);
 				}
 				mouseItem = item;
+				mouseInfo = info;
+				mouseName = name;
+				mouseStack = stack;
 				}
 			}
 			else if(slot == 22)
@@ -55,9 +68,12 @@ if(inventory == true)
 				}
 				if(mouseItem != -1)
 				{
-					scp_itemPickup_slot(slot,mouseItem);
+					scp_itemPickup_slot(slot,mouseItem,mouseName,mouseInfo,mouseStack,mouseAmmoType,mouseAmmo,mouseMaxAmmo);
 				}
 				mouseItem = item;
+				mouseInfo = info;
+				mouseName = name;
+				mouseStack = stack;
 				}
 			}
 			else
@@ -68,9 +84,15 @@ if(inventory == true)
 				}
 				if(mouseItem != -1)
 				{
-					scp_itemPickup_slot(slot,mouseItem);
+					scp_itemPickup_slot(slot,mouseItem,mouseName,mouseInfo,mouseStack,mouseAmmoType,mouseAmmo,mouseMaxAmmo);
 				}
 				mouseItem = item;
+				mouseInfo = info;
+				mouseName = name;
+				mouseStack = stack;
+				mouseAmmoType = ammoType;
+				mouseAmmo = ammo;
+				mouseMaxAmmo = maxAmmo;
 			}
 			
 		}
@@ -81,6 +103,12 @@ if(inventory == true)
 		if(item != -1)
 		{
 			draw_sprite(spr_items,item,startX,startY);
+			if(stack > 1)
+			{
+				draw_set_color(c_yellow);
+				draw_text(startX+(32 - string_width(string(stack))),startY+(32-string_height(string(stack))),string(stack));
+			}
+			
 		}
 	}
 }

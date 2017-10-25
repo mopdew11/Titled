@@ -49,4 +49,5 @@ primaryAmmo = 0;
 secondaryAmmo = 50;
 meleeAmmo = -1;
 
-maxAmmo = 50;
+pMaxAmmo = 0;
+sMaxAmmo = 0;
