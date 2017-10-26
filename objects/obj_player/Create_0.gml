@@ -37,6 +37,8 @@ prev = 315;
 //inventory
 globalvar inventory;
 inventory = false;
+canShoot = true;
+
 
 //weapon selection
 selected = 1;

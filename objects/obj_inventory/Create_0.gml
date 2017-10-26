@@ -30,7 +30,7 @@ for(i = 0; i < maxItems; i++)
 }
 scp_itemPickup(4,"Shotgun", "Shop smart, shop S mart. YOU GOT THAT?",1,8,2,2);
 scp_itemPickup(6,"Light Blade","Definitely not a lightsaber. Nope. Definitely not.",1,-2,-2,-2);
-scp_itemPickup(7,"Grenade launcher","BOOM! headsho...uh...shot near the person.",1,5,6,6);
+scp_itemPickup(7,"Grenade launcher","BOOM! headsho...uh...shot near the person.",1,9,6,6);
 
 //setup slots for equipment
 for(i = maxItems; i <= maxEquipment; i++)

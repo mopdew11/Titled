@@ -21,6 +21,11 @@ if(dead = false)
 	{
 		inventory = false;
 	}
+	//can shoot
+	if inventory == false
+		canShoot = true;
+	else
+		canShoot = false;
 
 	//equipment
 	primary = global.inv[0,20];
@@ -111,7 +116,7 @@ if(dead = false)
 	}
 	//==================================================================
 	//primary shooting
-	if(shoot == 1 && selected == 0 && global.inv[5,20] > 0)
+	if(shoot == 1 && selected == 0 && global.inv[5,20] > 0 && canShoot == true)
 	{
 		switch primary
 		{
@@ -123,7 +128,7 @@ if(dead = false)
 	}
 
 	//secondary shooting
-	if(shoot == 1 && selected == 1 && global.inv[5,21] > 0)
+	if(shoot == 1 && selected == 1 && global.inv[5,21] > 0 && canShoot == true)
 	{
 		switch secondary
 		{

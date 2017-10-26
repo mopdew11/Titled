@@ -44,6 +44,12 @@ if(baddieHealth <= 0)
 				}
 				instance_destroy();
 				break;
+		case 2: if(ran > 1)
+				{
+					scp_dropItemExt(9,"Grenades", "Explodes. be carefull.",dropNum2,-2,-2,-2);
+				}
+				instance_destroy();
+				break;
 	}
 }
 

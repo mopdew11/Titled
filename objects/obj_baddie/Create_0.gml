@@ -10,4 +10,4 @@ baddieDamage = 10;
 ran = irandom_range(0,3);
 dropNum = irandom_range(10,30);
 dropNum2 = irandom_range(2,10);
-dropItem = irandom_range(0,1);
+dropItem = irandom_range(0,2);
