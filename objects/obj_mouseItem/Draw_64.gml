@@ -14,7 +14,7 @@ fireRate = mouseFireRate;
 
 if(item != -1)
 {
-	draw_sprite(spr_items,item,guiX, guiY);
+	draw_sprite(spr_items, item, guiX, guiY);
 	if(stack > 1)
 	{
 		draw_set_font(fnt_large);

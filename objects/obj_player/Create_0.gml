@@ -25,7 +25,7 @@ maxHealth = 100;
 if(class = 0)
 	defense = 0;
 else
-	defence = 10;
+	defense = 10;
 iHealth = 0;
 isDead = false;
 
@@ -65,4 +65,6 @@ sMaxAmmo = 0;
 //fireRate
 pFireRate = 0;
 sFireRate = 0;
+
+spriteAdd = 32;
 
