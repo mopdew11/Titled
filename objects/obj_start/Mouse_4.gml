@@ -1,3 +1,2 @@
 /// @description 
-if room_exists(room_next(room))
-	room_goto_next();
+obj_menuOverhead.menu = 1;

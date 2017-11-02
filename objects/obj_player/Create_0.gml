@@ -1,4 +1,6 @@
 /// @description initialize variables
+//class
+class = CLASS;
 //death
 globalvar dead;
 dead = false;
@@ -12,16 +14,19 @@ counter = 1;
 reloadTime = 1*room_speed; 
 
 //other things
-movespeed = 5;
+if(class = 0)
+	movespeed = 5;
+else
+	movespeed = 3;
 sprSpeed = 1;
 display_reset(0, true)
 playerHealth = 100;
 maxHealth = 100;
-defense = 0;
+if(class = 0)
+	defense = 0;
+else
+	defence = 10;
 iHealth = 0;
-//measured in seconds
-invinceTime = 2;
-invincible = false;
 isDead = false;
 
 
@@ -60,3 +65,4 @@ sMaxAmmo = 0;
 //fireRate
 pFireRate = 0;
 sFireRate = 0;
+
