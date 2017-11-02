@@ -38,10 +38,12 @@ if(dead = false)
 		if(selected = 1)
 		{
 			selected = 0;
+			alarm[3] = -1;
 		}
 		else
 		{
 			selected = 1;
+			alarm[3] = -1;
 		}
 	}
 	//select down
@@ -50,21 +52,32 @@ if(dead = false)
 		if(selected = 1)
 		{
 			selected = 0;
+			alarm[3] = -1;
 		}
 		else
 		{
 			selected = 1;
+			alarm[3] = -1;
 		}
 	}
 
 	//ammo set
 	pMaxAmmo = global.inv[6,20];
 	sMaxAmmo = global.inv[6,21];
+	if(global.inv[7,20] != 0)
+		pFireRate = room_speed / global.inv[7,20];
+	else
+		pFireRate = 1;
+	if(global.inv[7,21] != 0)
+		sFireRate = room_speed / global.inv[7,21];
+	else
+		sFireRate = 1;
 	
 	//reload
 	if(reload)
 	{
-		scp_reload(selected);
+		alarm[2] = reloadTime;
+		shoot = false;
 	}
 
 	//determin what direction the player moves by adding inputs
@@ -116,8 +129,9 @@ if(dead = false)
 	}
 	//==================================================================
 	//primary shooting
-	if(shoot == 1 && selected == 0 && global.inv[5,20] > 0 && canShoot == true)
+	if(shoot == 1 && selected == 0 && global.inv[5,20] > 0 && canShoot == true && alarm[3] == -1)
 	{
+		alarm[3] = pFireRate;
 		switch primary
 		{
 			case 0: audio_play_sound(snd_shoot,5,false); scp_alienGun(10,1); global.inv[5,20]--; break;
@@ -128,8 +142,9 @@ if(dead = false)
 	}
 
 	//secondary shooting
-	if(shoot == 1 && selected == 1 && global.inv[5,21] > 0 && canShoot == true)
+	if(shoot == 1 && selected == 1 && global.inv[5,21] > 0 && canShoot == true && alarm[3] == -1)
 	{
+		alarm[3] = sFireRate;
 		switch secondary
 		{
 			case 3: audio_play_sound(snd_badShoot,5,false); global.inv[5,21]--; scp_startingGun(5); break; 

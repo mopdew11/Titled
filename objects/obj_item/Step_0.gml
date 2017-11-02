@@ -1,2 +1,2 @@
 /// @description 
-scp_item(ID,name,info,stack,ammoType,ammo,maxAmmo);
+scp_item(ID,name,info,stack,ammoType,ammo,maxAmmo,fireRate);

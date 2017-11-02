@@ -14,6 +14,6 @@ if(detected == true)
 
 if(baddieHealth <= 0)
 {
-	scp_dropItemExt(item,iName,iInfo,stack,ammoType,ammo,maxAmmo);
+	scp_dropItemExt(item,iName,iInfo,stack,ammoType,ammo,maxAmmo,fireRate);
 	instance_destroy();
 }

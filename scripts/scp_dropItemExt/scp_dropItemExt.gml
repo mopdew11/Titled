@@ -9,4 +9,5 @@ with item
 	ammoType = argument4;
 	ammo = argument5;
 	maxAmmo = argument6;
+	fireRate = argument7;
 }

@@ -9,4 +9,5 @@ with item
 	ammoType = other.ammoType;
 	ammo = other.ammo;
 	maxAmmo = other.maxAmmo;
+	fireRate = other.fireRate;
 }

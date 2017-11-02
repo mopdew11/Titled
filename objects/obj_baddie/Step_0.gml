@@ -32,22 +32,13 @@ if(baddieHealth <= 0)
 {
 	switch dropItem
 	{
-		case 0: if(ran > 1)
-				{
-					scp_dropItemExt(5,"ammo","what do I do with this? throw it at 'em?", dropNum,-2,-2,-2);
-				}
+		case 0: scp_dropItemExt(5,"ammo","what do I do with this? throw it at 'em?", dropNum,-2,-2,-2,-2);
 				instance_destroy();
 				break;
-		case 1: if (ran > 1)
-				{
-					scp_dropItemExt(8,"shotgun shells", "she sells shotgun shells at the shotgun store\n..eh...doesn't have the same ring to it", dropNum2,-2,-2,-2);
-				}
+		case 1: scp_dropItemExt(8,"shotgun shells", "she sells shotgun shells at the shotgun store\n..eh1...doesn't have the same ring to it", dropNum2,-2,-2,-2,-2);
 				instance_destroy();
 				break;
-		case 2: if(ran > 1)
-				{
-					scp_dropItemExt(9,"Grenades", "Explodes. be carefull.",dropNum2,-2,-2,-2);
-				}
+		case 2: scp_dropItemExt(9,"Grenades", "Explodes. be carefull.",dropNum2,-2,-2,-2,-2);
 				instance_destroy();
 				break;
 	}

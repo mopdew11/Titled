@@ -5,4 +5,4 @@ stack = 1;
 ammoType = 5;
 ammo = 20;
 maxAmmo = 20;
-
+fireRate = 4;

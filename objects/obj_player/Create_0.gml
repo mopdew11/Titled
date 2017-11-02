@@ -8,6 +8,9 @@ respawnY = y;
 
 counter = 1;
 
+//reload times
+reloadTime = 1*room_speed; 
+
 //other things
 movespeed = 5;
 sprSpeed = 1;
@@ -53,3 +56,7 @@ meleeAmmo = -1;
 
 pMaxAmmo = 0;
 sMaxAmmo = 0;
+
+//fireRate
+pFireRate = 0;
+sFireRate = 0;

@@ -7,8 +7,10 @@ if(inventory = false)
 	draw_set_font(fnt_small);
 
 	draw_text_transformed_color(0,37,playerHealth,5,5,0,c_red,c_red,c_maroon,c_maroon,1);
-
-
+	if(selected == 0)
+		draw_text(100,110,string(global.inv[7,20]));
+	else
+		draw_text(100,110,string(global.inv[7,21]));
 	draw_text(100,100,"detected:" + string(detected));
 
 	//AMMO

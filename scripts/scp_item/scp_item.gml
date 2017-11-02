@@ -4,7 +4,7 @@ if(place_meeting(x,y,obj_player))
 {
 	if(keyboard_check_pressed(ord("E")))
 	{	
-		additem = scp_itemPickup(argument0,argument1,argument2,argument3,argument4,argument5,argument6);
+		additem = scp_itemPickup(argument0,argument1,argument2,argument3,argument4,argument5,argument6,argument7);
 		if(additem = false)
 		{
 			draw_set_font(fnt_large);

@@ -10,6 +10,7 @@ stack = mouseStack;
 ammo = mouseAmmo;
 ammoType = mouseAmmoType;
 maxAmmo = mouseMaxAmmo;
+fireRate = mouseFireRate;
 
 if(item != -1)
 {

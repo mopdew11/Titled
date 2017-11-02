@@ -6,3 +6,4 @@ var stack;
 var ammoType;//-2 = void
 var ammo;//-2 = void
 var maxAmmo;//-2 = void
+var fireRate;//-2 if void

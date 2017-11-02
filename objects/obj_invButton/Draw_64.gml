@@ -8,6 +8,7 @@ if(inventory == true)
 	ammoType = global.inv[4,slot];
 	ammo = global.inv[5,slot];
 	maxAmmo = global.inv[6,slot];
+	fireRate = global.inv[7,slot];
 	
 	click = mouse_check_button_pressed(mb_left);
 
@@ -32,12 +33,16 @@ if(inventory == true)
 				}
 				if(mouseItem != -1)
 				{
-					scp_itemPickup_slot(slot,mouseItem,mouseName,mouseInfo,mouseStack,mouseAmmoType,mouseAmmo,mouseMaxAmmo);
+					scp_itemPickup_slot(slot,mouseItem,mouseName,mouseInfo,mouseStack,mouseAmmoType,mouseAmmo,mouseMaxAmmo,mouseFireRate);
 				}
 				mouseItem = item;
 				mouseInfo = info;
 				mouseName = name;
 				mouseStack = stack;
+				mouseAmmoType = ammoType;
+				mouseAmmo = ammo;
+				mouseMaxAmmo = maxAmmo;
+				mouseFireRate = fireRate;
 				}
 			}
 			else if(slot == 21)
@@ -50,12 +55,16 @@ if(inventory == true)
 				}
 				if(mouseItem != -1)
 				{
-					scp_itemPickup_slot(slot,mouseItem,mouseName,mouseInfo,mouseStack,mouseAmmoType,mouseAmmo,mouseMaxAmmo);
+					scp_itemPickup_slot(slot,mouseItem,mouseName,mouseInfo,mouseStack,mouseAmmoType,mouseAmmo,mouseMaxAmmo,mouseFireRate);
 				}
 				mouseItem = item;
 				mouseInfo = info;
 				mouseName = name;
 				mouseStack = stack;
+				mouseAmmoType = ammoType;
+				mouseAmmo = ammo;
+				mouseMaxAmmo = maxAmmo;
+				mouseFireRate = fireRate;
 				}
 			}
 			else if(slot == 22)
@@ -68,12 +77,16 @@ if(inventory == true)
 				}
 				if(mouseItem != -1)
 				{
-					scp_itemPickup_slot(slot,mouseItem,mouseName,mouseInfo,mouseStack,mouseAmmoType,mouseAmmo,mouseMaxAmmo);
+					scp_itemPickup_slot(slot,mouseItem,mouseName,mouseInfo,mouseStack,mouseAmmoType,mouseAmmo,mouseMaxAmmo,mouseFireRate);
 				}
 				mouseItem = item;
 				mouseInfo = info;
 				mouseName = name;
 				mouseStack = stack;
+				mouseAmmoType = ammoType;
+				mouseAmmo = ammo;
+				mouseMaxAmmo = maxAmmo;
+				mouseFireRate = fireRate;
 				}
 			}
 			else
@@ -84,7 +97,7 @@ if(inventory == true)
 				}
 				if(mouseItem != -1)
 				{
-					scp_itemPickup_slot(slot,mouseItem,mouseName,mouseInfo,mouseStack,mouseAmmoType,mouseAmmo,mouseMaxAmmo);
+					scp_itemPickup_slot(slot,mouseItem,mouseName,mouseInfo,mouseStack,mouseAmmoType,mouseAmmo,mouseMaxAmmo,mouseFireRate);
 				}
 				mouseItem = item;
 				mouseInfo = info;
@@ -93,6 +106,7 @@ if(inventory == true)
 				mouseAmmoType = ammoType;
 				mouseAmmo = ammo;
 				mouseMaxAmmo = maxAmmo;
+				mouseFireRate = fireRate;
 			}
 			
 		}
