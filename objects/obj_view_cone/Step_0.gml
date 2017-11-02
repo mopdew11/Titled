@@ -24,3 +24,9 @@ if(instance_exists(master))
 	
 }
 else instance_destroy();
+
+if(global.detected == true)
+{
+	sprite_index = spr_blank;	
+}
+else sprite_index = spr_view_cone;
