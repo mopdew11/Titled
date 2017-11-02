@@ -23,7 +23,7 @@ display_reset(0, true)
 playerHealth = 100;
 maxHealth = 100;
 if(class = 0)
-	defense = 0;
+	defence = 0;
 else
 	defense = 10;
 iHealth = 0;

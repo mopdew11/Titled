@@ -1,4 +1,4 @@
-/// @description add text over time
+/*/ @description add text over time
 if(instance_nearest(x,y,obj_npc).close == true)
 {
 	if (time < text_length)
@@ -17,7 +17,6 @@ if(instance_nearest(x,y,obj_npc).close == true)
 		obj_player.talking = false;
 	}
 	
-
 	//render textbox and text
 	
 	draw_set_alpha(alpha);	
@@ -26,15 +25,15 @@ if(instance_nearest(x,y,obj_npc).close == true)
 	draw_set_font(font);
 	draw_set_color(c_dkgray);
 	draw_rectangle(x,y,x+box_width,y+box_height,0);
-	draw_set_color(c_red);
+	draw_set_color(c_gray);
 	draw_rectangle(x,y,x+box_width,y+box_height,1);
 
-	draw_set_color(c_red);
+	draw_set_color(c_gray);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 	draw_text_ext
 	(
-		x + padding,
+		x + padding +3,
 		y + padding,
 		print,
 		font_size+(font_size/2),
@@ -46,3 +45,4 @@ if(instance_nearest(x,y,obj_npc).close == true)
 {
 	instance_destroy();
 }
+

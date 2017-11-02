@@ -1,22 +1,19 @@
-/// @description 
-if(instance_exists(obj_player))
+/// @description
+if(distance_to_object(obj_player) <= 20)
 {
-	if(distance_to_object(obj_player) <= 20)
+	if(instance_exists(obj_bubble))
 	{
-		if(instance_exists(obj_bubble))
-		{
-			obj_bubble.vis = true;
-		}
-		close = true
+		obj_bubble.vis = true;
 	}
-	else
+	close = true
+}
+else
+{
+	if(instance_exists(obj_bubble))
 	{
-		if(instance_exists(obj_bubble))
-		{
-			obj_bubble.vis = false;
-		}
-		close = false;
+		obj_bubble.vis = false;
 	}
+	close = false;
 }
 
 if(close == true && keyboard_check_pressed(ord("E")))

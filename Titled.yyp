@@ -511,6 +511,14 @@
             }
         },
         {
+            "Key": "68c26fe8-0735-415f-9901-71c4ab984ef9",
+            "Value": {
+                "id": "c01cf7ec-1884-4df4-8269-19fc16b5f425",
+                "resourcePath": "fonts\\fnt_largest\\fnt_largest.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "6ae25853-44d3-4084-bb58-cb455a9057e6",
             "Value": {
                 "id": "0416b5e3-fff9-45d9-94fa-faa12c3da929",
