@@ -19,7 +19,7 @@ with(txt)
 	spd = argument1;
 	
 	//the font to type in
-	font = fnt_largest;
+	font = fnt_textBox;
 	
 	//determin the length of the text
 	text_length = string_length(text);

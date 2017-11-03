@@ -12,9 +12,9 @@ if(inventory = true)
 	yOffset = 30;
 	scp_healthV4(xOffset,yOffset);
 	
-	//draw defence
+	//draw defense
 	draw_set_font(fnt_small);
-	draw_text(392,85,player.defence);
+	draw_text(392,85,player.defense);
 	
 	//draw inventory slots(moves invisible inventory buttons to the slots)
 	columns = 5;
