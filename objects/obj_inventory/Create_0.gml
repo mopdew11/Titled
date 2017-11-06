@@ -43,8 +43,8 @@ for(i = maxItems; i <= maxEquipment; i++)
 	global.button[i].slot = i;
 }
 
-scp_itemPickup_slot(21,obj_player.secondary, "starting pistol","your basic shooty thing. You know, the thing that shoots",1,5,50,50,6);
-scp_itemPickup_slot(22,obj_player.melee,"knife", "pronounced Kuh Nife",1,-2,-2,-2,-2);
+scp_itemPickup_slot(21,obj_player.secondary, "Starting pistol","Your basic shooty thing. You know, the thing that shoots",1,5,50,50,6);
+scp_itemPickup_slot(22,obj_player.melee,"Knife", "Pronounced Kuh Nife",1,-2,-2,-2,-2);
 
 //SETUP SLOTS FOR PASSIVES(CAPSLOCK)
 maxPassives = maxEquipment + 6;

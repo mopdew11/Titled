@@ -1,5 +1,5 @@
 item = 0;
-iName = "alien Blaster";
+iName = "Alien Blaster";
 iInfo = "seems to be from space. At least thats what the name implies.";
 stack = 1;
 ammoType = 5;

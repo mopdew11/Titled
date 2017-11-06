@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "00f655b6-be61-4713-9534-fe4adcaf12e3",
+            "Value": {
+                "id": "f4388177-c2c8-4de0-a9c7-869c71f12445",
+                "resourcePath": "scripts\\scp_drugs\\scp_drugs.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0264bd00-bcc2-485f-913b-fe495a2b28ca",
             "Value": {
                 "id": "605969a1-7a90-4415-b5b5-26a1015c09b7",
@@ -271,6 +279,14 @@
             }
         },
         {
+            "Key": "37589977-e451-4c06-97da-5dccfe4d7ad8",
+            "Value": {
+                "id": "57363c9a-a598-451b-923c-c4d489204ad0",
+                "resourcePath": "objects\\obj_lazer\\obj_lazer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "37f44c5f-5de5-44f5-9b9a-4082cdbe532d",
             "Value": {
                 "id": "10e3c384-0439-4be1-8bdf-bb6c1150c9f8",
@@ -367,6 +383,14 @@
             }
         },
         {
+            "Key": "47f08c39-b1d1-4efd-8396-29ba6dfbf484",
+            "Value": {
+                "id": "16579dbe-3d52-45d3-b40d-e88599640038",
+                "resourcePath": "objects\\obj_lazerCollide\\obj_lazerCollide.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "485868a4-146a-4159-89e5-28bda6c32f86",
             "Value": {
                 "id": "802a4b35-dbe6-46fe-8141-2ba873243e6d",
@@ -396,6 +420,14 @@
                 "id": "ec4c790d-cdc4-44ad-aaf0-59930532d446",
                 "resourcePath": "scripts\\scp_badShoot\\scp_badShoot.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4dfe7489-6895-431f-b1b7-4d208830aa80",
+            "Value": {
+                "id": "3d933679-5a60-4470-8ff4-2b2e9b349875",
+                "resourcePath": "sprites\\spr_lazer\\spr_lazer.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -444,6 +476,14 @@
                 "id": "deb325fa-d347-4f81-8ed0-19baba8359b5",
                 "resourcePath": "objects\\obj_Overhead\\obj_Overhead.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "56866a3f-13e1-4093-aece-38912799e9ad",
+            "Value": {
+                "id": "17d921b5-2cdb-4151-9ce2-edeb726f04cf",
+                "resourcePath": "sprites\\spr_lazerCollide\\spr_lazerCollide.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1159,6 +1199,14 @@
             }
         },
         {
+            "Key": "d511b657-fdd0-40bb-815e-169585603cbb",
+            "Value": {
+                "id": "89e0b4af-7cbd-42a0-b9e3-e29160ccab98",
+                "resourcePath": "objects\\obj_shake\\obj_shake.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d618db2c-89ea-4bae-bfc0-69b8c3a765ef",
             "Value": {
                 "id": "dc2b24a8-b91d-4eff-8754-6f0d783d467a",
@@ -1485,6 +1533,7 @@
         "c8fca520-8b50-4362-b33e-b588fe6d8272",
         "4a3cfcc7-2f0c-435d-a119-772d2447ae25",
         "04a5ac6e-6f64-4acd-b99f-4b4857095e64",
+        "00f655b6-be61-4713-9534-fe4adcaf12e3",
         "53bb7c17-fa13-4376-aa23-4cf7c8dce45d",
         "e7166a8f-eb47-472a-bb8d-e7ebec9d92c0",
         "e6bafe24-83e7-485c-892a-9dec85a72eda",

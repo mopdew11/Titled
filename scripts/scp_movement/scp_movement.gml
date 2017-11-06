@@ -1,3 +1,8 @@
+//determin what direction the player moves by adding inputs
+//and then multiplying it by argument0
+moveY = (down + up) * argument0;
+moveX = (right + left) * argument0;
+
 //collision
 if (place_meeting(x+moveX,y,obj_terrain))
 {
