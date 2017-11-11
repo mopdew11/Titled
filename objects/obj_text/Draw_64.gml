@@ -1,6 +1,10 @@
 /// @description add text over time
 if(instance_nearest(x,y,obj_npc).close == true)
 {
+	if(keyboard_check_pressed(ord("E"))&& start = 1)
+	{
+		time = text_length -1;	
+	}
 	if (time < text_length)
 	{
 		time += spd;
@@ -11,6 +15,7 @@ if(instance_nearest(x,y,obj_npc).close == true)
 			i = 0;			
 		}
 		i++;
+		start = 1;
 	}
 	else
 	{
@@ -45,8 +50,31 @@ if(instance_nearest(x,y,obj_npc).close == true)
 		font_size+(font_size/2),
 		maxLength
 	);
-
+	
+	//create boxes for interaction
+	//calculate offsets
+	ny = (display_get_gui_height()/4)*3 + string_height("E");
+	
+	//create them
+	inst = instance_create_depth(x,ny,depth,obj_rButtons);
+	with inst
+	{
+		width = display_get_gui_width();
+		height = string_height("E");
+	}
+	
+	
 	draw_set_alpha(1);
+	
+	//skip prompt
+	//E
+	draw_set_font(fnt_prompt);
+	xx = window_get_width() - string_width("E") - 40;
+	yy = window_get_height() - string_height("E")- 20;
+	draw_text(xx,yy,"E");
+	
+	//arrow
+	draw_sprite(spr_arrow,0,xx+string_width("E"),yy);
 }else
 {
 	instance_destroy();

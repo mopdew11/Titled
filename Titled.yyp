@@ -719,6 +719,14 @@
             }
         },
         {
+            "Key": "80d3a89a-4be7-45e4-b2c2-be9408cb6d03",
+            "Value": {
+                "id": "5465a623-7b36-43c4-92c2-13a22fc1dd7b",
+                "resourcePath": "objects\\obj_rButtons\\obj_rButtons.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "81a04157-21a9-4971-8a20-0a8119e44ccc",
             "Value": {
                 "id": "e039ef2e-25d5-4e48-be11-58c5a4c3fe45",
@@ -1007,6 +1015,14 @@
             }
         },
         {
+            "Key": "adea815c-6ca5-4ba6-9ead-96d3bb7f7dc9",
+            "Value": {
+                "id": "0aa99c19-f76a-45e4-922a-1ed42d058a8a",
+                "resourcePath": "fonts\\fnt_prompt\\fnt_prompt.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "b4dc965c-4dcb-41e9-983a-7df2eb6fe15d",
             "Value": {
                 "id": "96dcaf45-35d0-40a0-9f81-fd47188ea071",
@@ -1163,6 +1179,14 @@
             "Value": {
                 "id": "46f20723-485d-44f8-bf54-52ffc741e064",
                 "resourcePath": "sprites\\spr_playerFront\\spr_playerFront.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d25e44af-c7c4-4799-bf43-b676e557e396",
+            "Value": {
+                "id": "b3fc727e-5871-4685-a351-a828a6088585",
+                "resourcePath": "sprites\\spr_arrow\\spr_arrow.yy",
                 "resourceType": "GMSprite"
             }
         },

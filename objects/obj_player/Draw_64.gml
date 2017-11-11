@@ -23,7 +23,7 @@ if(inventory = false)
 
 	draw_set_font(fnt_larger);
 	draw_set_color(c_white);
-	if(maxAmmo > -1)
+	if(maxAmmo > -1 && !instance_exists(obj_text))
 	{
 		yy = window_get_height() - string_height(string(ammo) + "/" + string(maxAmmo)) - 10;
 		xx = window_get_width() - string_width(string(ammo) + "/" + string(maxAmmo)) -20;
