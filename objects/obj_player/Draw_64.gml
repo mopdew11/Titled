@@ -3,13 +3,17 @@
 if(inventory = false)
 {
 	scp_healthV4(0,0);
-
+	
 	draw_set_font(fnt_small);
 
 	draw_text_transformed_color(0,37,int64(playerHealth),5,5,0,c_red,c_red,c_maroon,c_maroon,1);
 
 	draw_text(100,100,"detected:" + string(detected));
-
+	if(alarm[2] > 0)
+	{
+		draw_text(100,110,"reloading")
+	}
+	
 	//AMMO
 	switch selected
 	{
@@ -19,7 +23,7 @@ if(inventory = false)
 
 	draw_set_font(fnt_larger);
 	draw_set_color(c_white);
-	if(maxAmmo > -1)
+	if(maxAmmo > -1 && !instance_exists(obj_text))
 	{
 		yy = window_get_height() - string_height(string(ammo) + "/" + string(maxAmmo)) - 10;
 		xx = window_get_width() - string_width(string(ammo) + "/" + string(maxAmmo)) -20;

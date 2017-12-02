@@ -12,6 +12,7 @@ if(dead = false)
 	meleekey = keyboard_check_pressed(ord("F"));
 	inventoryKey = keyboard_check_pressed(vk_tab);
 	reload = keyboard_check_pressed(ord("R"));
+	sprintKey = keyboard_check_pressed(vk_lshift);
 	//inventory toggle
 	if(inventoryKey == true && inventory = false)
 	{
@@ -20,6 +21,16 @@ if(dead = false)
 	else if(inventoryKey == true && inventory == true)
 	{
 		inventory = false;
+	}
+	
+	//sprint toggle
+	if(sprintKey = true&& sprint = false)
+	{
+		sprint = true
+	}
+	else if(sprintKey = true && sprint = true)
+	{
+		sprint = false;	
 	}
 	//can shoot
 	if inventory == false
@@ -74,20 +85,33 @@ if(dead = false)
 		sFireRate = 1;
 	
 	//reload
-	if(reload)
+	if(reload && inventory != true)
 	{
 		alarm[2] = reloadTime;
 		shoot = false;
 	}
+	
+	if(inventory == true)
+	{
+		alarm[2] = -1;	
+	}
 
-	//determin what direction the player moves by adding inputs
-	//and then multiplying it by movespeed
-	moveY = (down + up) * movespeed;
-	moveX = (right + left) * movespeed;
+
 
 	if(talking = false)
 	{
-		scp_movement();
+		if(sprint = false)
+			scp_movement(moveSpeed);
+		else
+		{
+			scp_movement(sprintSpeed);
+			canShoot = false;
+		}
+	}
+	//sprint
+	if(moveX = 0 && moveY == 0)
+	{
+		sprint = false;	
 	}
 
 	//==================================================================
@@ -129,28 +153,45 @@ if(dead = false)
 	}
 	//==================================================================
 	//primary shooting
-	if(shoot == 1 && selected == 0 && global.inv[5,20] > 0 && canShoot == true && alarm[3] == -1)
+	if(sprint = false)
 	{
-		alarm[3] = pFireRate;
-		switch primary
+		if(shoot == 1 && selected == 0 && global.inv[5,20] > 0 && canShoot == true && alarm[3] == -1)
 		{
-			case 0: audio_play_sound(snd_shoot,5,false); scp_alienGun(10,1); global.inv[5,20]--; break;
-			case 4:	scp_shotgun(5); global.inv[5,20]--; break;
-			case 7: scp_grenadeLauncher(50,3,15,1.1); global.inv[5,20]--;break;
-			default: break;
+			alarm[3] = pFireRate;
+			switch primary
+			{
+				case 0: audio_play_sound(snd_shoot,5,false); scp_alienGun(10,1); global.inv[5,20]--; break;
+				case 4:	scp_shotgun(5); global.inv[5,20]--; break;
+				case 7: scp_grenadeLauncher(50,3,15,1.1); global.inv[5,20]--;break;
+				default: break;
+			}
+		}
+	}else
+	{
+		if(shoot == 1)
+		{
+			sprint = false;	
 		}
 	}
 
 	//secondary shooting
-	if(shoot == 1 && selected == 1 && global.inv[5,21] > 0 && canShoot == true && alarm[3] == -1)
+	if(sprint = false)
 	{
-		alarm[3] = sFireRate;
-		switch secondary
+		if(shoot == 1 && selected == 1 && global.inv[5,21] > 0 && canShoot == true && alarm[3] == -1)
 		{
-			case 3: audio_play_sound(snd_badShoot,5,false); global.inv[5,21]--; scp_startingGun(5); break; 
+			alarm[3] = sFireRate;
+			switch secondary
+			{
+				case 3: audio_play_sound(snd_badShoot,5,false); global.inv[5,21]--; scp_startingGun(5); break; 
+			}
+		}
+	}else
+	{
+		if(shoot == 1)
+		{
+			sprint = false;	
 		}
 	}
-
 
 	if(playerHealth <= 0)
 	{
@@ -160,7 +201,7 @@ if(dead = false)
 	}
 
 	//keeps player health within boundries
-	playerHealth = clamp(playerHealth,0,maxHealth);
+	playerHealth = clamp(playerHealth,0, maxHealth);
 }else
 {
 	sprite_index = spr_dead;

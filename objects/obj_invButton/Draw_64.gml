@@ -120,6 +120,7 @@ if(inventory == true)
 			if(stack > 1)
 			{
 				draw_set_color(c_yellow);
+				draw_set_font(fnt_large);
 				draw_text(startX+(32 - string_width(string(stack))),startY+(32-string_height(string(stack))),string(stack));
 			}
 			

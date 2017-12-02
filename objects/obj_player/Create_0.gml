@@ -1,6 +1,11 @@
 /// @description initialize variables
 //class
 class = CLASS;
+
+//swoosh
+if(class = 0)
+	instance_create_depth(x,y,depth +1,obj_swoosh);
+
 //death
 globalvar dead;
 dead = false;
@@ -14,22 +19,28 @@ counter = 1;
 reloadTime = 1*room_speed; 
 
 //other things
-if(class = 0)
-	movespeed = 5;
-else
-	movespeed = 3;
+
 sprSpeed = 1;
 display_reset(0, true)
 playerHealth = 100;
 maxHealth = 100;
+
+//class defense
 if(class = 0)
 	defense = 0;
 else
 	defense = 10;
+//class speed
+if(class = 0)
+	canSprint = true;
+else
+	canSprint = false;
+moveSpeed = 5;
+sprintSpeed = 7;
+sprint = false;
+
+//random crap
 iHealth = 0;
-isDead = false;
-
-
 isCharging = false;
 j = 16;
 maxCharge = 45;
@@ -67,4 +78,7 @@ pFireRate = 0;
 sFireRate = 0;
 
 spriteAdd = 32;
+
+//camerashake
+j = 0;
 
