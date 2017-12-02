@@ -1,8 +1,9 @@
-/// @description open/close door
-if(!locked && distance_to_object(obj_player) < 10)
+/// @description open/close
+if(!instance_exists(obj_baddie))
 {
-	open = true;
-}else
+	sprite_index = spr_doorOpen;
+}
+else
 {
-	open = false;
+	sprite_index = spr_doorClosed;
 }

@@ -1,2 +1,0 @@
-/// @description 
-damage = 5;

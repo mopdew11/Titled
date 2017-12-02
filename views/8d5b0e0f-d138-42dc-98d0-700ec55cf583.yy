@@ -4,9 +4,8 @@
     "mvc": "1.1",
     "name": "8d5b0e0f-d138-42dc-98d0-700ec55cf583",
     "children": [
-        "f4debf8d-0fd6-475c-a690-135aa1163173",
-        "f07bcd10-9303-4606-93fc-9f8e6736b80f",
-        "886c8d02-40ec-4bba-91bf-e8c169c9e96a"
+        "fa96e5bf-626b-4110-9c86-17f6a791ceff",
+        "d8ea4ce2-4370-4d97-9290-8ca6e2393f91"
     ],
     "filterType": "GMSprite",
     "folderName": "door",

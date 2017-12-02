@@ -1,15 +1,7 @@
 /// @description death text
-
-if(dead == true)
+draw_set_font(fnt_large)
+if(!instance_exists(obj_player))
 {
-	draw_set_font(fnt_largest)
-	draw_set_color(c_purple)
-
-	//center text
-	xx = (window_get_width()/2) - (string_width("YOU IS DED")/2)
-	yy = (window_get_height()/2) - (string_height("YOU IS DED")/2)
-
-	draw_text(xx,yy,"YOU IS DED");
+	draw_text_transformed_color(middleX,middleY,"YOU DIED",8,8,0,c_purple,c_purple,c_gray,c_black,1);
+	draw_text_transformed_color(middleX+80,middleY+100,"R to reset",4,4,0,c_purple,c_purple,c_gray,c_black,1);
 }
-
-

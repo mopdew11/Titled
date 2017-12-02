@@ -1,10 +1,10 @@
 /// @description movement
+
 //if it has been 10 frames scince random number was last generated
 if(i > 30)
 {
 	//generate a new random number
 	ran = irandom_range(0,4);
-	
 	
 	//reset frame counter
 	i = 0;
@@ -26,26 +26,25 @@ else{
 		case 4: break;	
 	}	
 }
-
-//heath check
-if(baddieHealth <= 0)
-{
-	switch dropItem
-	{
-		case 0: scp_dropItemExt(5,"Ammo","what do I do with this? throw it at 'em?", dropNum,-2,-2,-2,-2);
-				instance_destroy();
-				break;
-		case 1: scp_dropItemExt(8,"Shotgun shells", "She sells shotgun shells at the shotgun store\n...Eh... Doesn't have the same ring to it", dropNum2,-2,-2,-2,-2);
-				instance_destroy();
-				break;
-		case 2: scp_dropItemExt(9,"Grenades", "Explodes. be carefull.",dropNum2,-2,-2,-2,-2);
-				instance_destroy();
-				break;
-	}
-}
-
 //increment frame counter
 i++;
 
+
 //shoot
-scp_badShoot(baddieDamage);
+
+//if it has been sRan frames scince last shot
+if(iShoot > sRan)
+{
+	//plays shoot sound
+	audio_play_sound(snd_badShoot,5,false);
+	
+	//creates baddie projectile
+	instance_create_depth(x,y,10,obj_badProjectile);
+	
+	//generates a new frane count to wait
+	sRan = irandom_range(10,60);
+	
+	//resets frame counter
+	iShoot = 0;
+}
+iShoot++;
