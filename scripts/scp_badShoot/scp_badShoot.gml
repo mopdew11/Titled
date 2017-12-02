@@ -16,7 +16,7 @@ if(iShoot > sRan && !collision_line(x,y,obj_player.x,obj_player.y,obj_terrain,tr
 		
 	}
 	
-	//generates a new frane count to wait
+	//generates a new frame count to wait
 	sRan = irandom_range(10,60);
 	
 	//resets frame counter
