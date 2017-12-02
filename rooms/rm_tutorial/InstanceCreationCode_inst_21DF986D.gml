@@ -1,0 +1,1 @@
+text = "hey, you're awake! we got to get you out of here. This will be your...tutorial we'll say. If you dont make it through this, you may as well give up";

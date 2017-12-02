@@ -1,0 +1,1 @@
+text = "Good, you made it passed those gaurds. The terminal to unlock the door to the weapons storage room is in the court yard.";

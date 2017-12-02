@@ -1,9 +1,13 @@
 /// @description add text over time
-if(instance_nearest(x,y,obj_npc).close == true)
+if(instance_nearest(x,y,obj_tutorial).close == true)
 {
-	if(keyboard_check_pressed(ord("E"))&& start = 1)
+	if(keyboard_check_pressed(ord("E")) && start = 1 && time < text_length)
 	{
 		time = text_length -1;	
+	}
+	else if (keyboard_check_pressed(ord("E")) && time >= text_length)
+	{
+		instance_destroy();	
 	}
 	if (time < text_length)
 	{
@@ -51,19 +55,6 @@ if(instance_nearest(x,y,obj_npc).close == true)
 		maxLength
 	);
 	
-	//create boxes for interaction
-	//calculate offsets
-	ny = (display_get_gui_height()/4)*3 + string_height("E");
-	
-	//create them
-	inst = instance_create_depth(x,ny,depth,obj_rButtons);
-	with inst
-	{
-		width = display_get_gui_width();
-		height = string_height("E");
-	}
-	
-	
 	draw_set_alpha(1);
 	
 	//skip prompt
@@ -79,4 +70,3 @@ if(instance_nearest(x,y,obj_npc).close == true)
 {
 	instance_destroy();
 }
-

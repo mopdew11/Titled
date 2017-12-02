@@ -20,14 +20,14 @@ if(close == true && keyboard_check_pressed(ord("E")))
 {
 	if(step = 0)
 	{
-		scp_textBox(dialogue,.5,x+10,y-5,false);
+		scp_textBox(dialogue,.5,x+10,y-5);
 		obj_player.talking = true;
 		step = 1;
 	}
 	else if(step = 1)
 	{
 		instance_destroy(instance_nearest(x,y,obj_text));
-		scp_textBox("respond\n" + r1 + "\n" + r2,.5,x+10,y-5,true);
+		scp_textBox("respond\n" + r1 + "\n" + r2,.5,x+10,y-5);
 		step = 2;
 	}
 	else if(step = 2)
@@ -35,17 +35,17 @@ if(close == true && keyboard_check_pressed(ord("E")))
 		if(response = 0)
 		{
 			instance_destroy(instance_nearest(x,y,obj_text));
-			scp_textBox(d1,.5,x+10,y-5,false);
+			scp_textBox(d1,.5,x+10,y-5);
 			step = 3;
 		}else if(response = 1)
 		{
 			instance_destroy(instance_nearest(x,y,obj_text));
-			scp_textBox(d2,.5,x+10,y-5,false);
+			scp_textBox(d2,.5,x+10,y-5);
 			step = 3;	
 		}else
 		{
 			instance_destroy(instance_nearest(x,y,obj_text));
-			scp_textBox("something has fucked up, you shouldnt see this unless you're debugging",.5,x,y,false);
+			scp_textBox("something has fucked up, you shouldnt see this unless you're debugging",.5,x,y);
 			step = 3;
 		}
 		
@@ -54,7 +54,7 @@ if(close == true && keyboard_check_pressed(ord("E")))
 	else if(step = 3)
 	{
 		instance_destroy(instance_nearest(x,y,obj_text));
-		scp_textBox(altDialogue,.5,x+10,y-5,false);
+		scp_textBox(altDialogue,.5,x+10,y-5);
 		obj_player.talking = true;
 	}
 }

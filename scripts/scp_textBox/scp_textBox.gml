@@ -5,10 +5,7 @@ txt = instance_create_depth(argument2, argument3,0,obj_text);
 
 //with that instance, set all these variables
 with(txt)
-{
-	//is it a response
-	r = argument4;
-	
+{	
 	//start
 	start = 0;
 	

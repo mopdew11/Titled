@@ -1,0 +1,1 @@
+text = "On the other side of this wall there is a gaurd. He's gaurding a terminal that unlocks the door to the weapons lab. Interact with the terminal using E.";

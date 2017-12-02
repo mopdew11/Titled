@@ -1,0 +1,1 @@
+text = "YEAH YOU MA...*ahem* Good, you can use this gun to take out the guard in front of the terminal that locks your way out of here.";
