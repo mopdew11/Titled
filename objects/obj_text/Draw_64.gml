@@ -20,6 +20,7 @@ if(instance_nearest(x,y,obj_tutorial).close == true)
 		}
 		i++;
 		start = 1;
+		obj_player.talking = true;
 	}
 	else
 	{
@@ -38,9 +39,11 @@ if(instance_nearest(x,y,obj_tutorial).close == true)
 
 	draw_set_font(font);
 	draw_set_color(c_dkgray);
+	draw_set_alpha(.2);
 	draw_rectangle(x,y,x+box_width,y+box_height,0);
 	draw_set_color(c_gray);
 	draw_rectangle(x,y,x+box_width,y+box_height,1);
+	draw_set_alpha(1);
 
 	draw_set_font(font);
 	draw_set_color(c_gray);
