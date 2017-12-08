@@ -207,7 +207,26 @@ if(dead = false)
 	sprite_index = spr_dead;
 }
 
-if(detected == true && !collision_line(obj_player.x, obj_player.y,obj_baddie.x, obj_baddie.y, obj_terrain, false, false))
+if(place_meeting(x,y,obj_view_cone))
+{
+	badCone = instance_place(x,y,obj_view_cone);
+	if(badCone != "none" && !collision_line(badCone.master.x,badCone.master.y,obj_player.x,obj_player.y,obj_terrain,true,true))
+	{
+		alarm[4] = 4 * room_speed;
+		detected = true;
+		badCone = "none";
+	}
+}
+
+/*if(badCone != "none" && !collision_line(badCone.master.x,badCone.master.y,obj_player.x,obj_player.y,obj_terrain,true,true))
+	{
+		alarm[0] = 4 * room_speed;
+		detected = true;
+		badCone = "none";
+	}*/
+/*if(detected == true && !collision_line(obj_player.x, obj_player.y,obj_baddie.x, obj_baddie.y, obj_terrain, false, false))
 {
 	alarm[4] = 4 * room_speed;	
 }
+else alarm[4] = -1;
+*/

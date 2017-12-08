@@ -82,3 +82,4 @@ spriteAdd = 32;
 //camerashake
 j = 0;
 
+badCone = "none"

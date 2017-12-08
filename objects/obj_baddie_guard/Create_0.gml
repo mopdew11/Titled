@@ -22,3 +22,5 @@ baddieHealth = 50;
 baddieDamage = 50;
 enemyPath = path_add();
 pathName = path_blank;
+startX = x;
+startY = y;

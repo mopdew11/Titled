@@ -21,5 +21,15 @@ if(baddieHealth <= 0)
 
 if(global.detected == false && path_index = -1)
 {
-		path_start(pathName, 2, path_action_reverse, true);
+	if(mp_grid_path(global.enemyGrid,enemyPath,x,y,startX,startY,1))
+	{
+		path_start(enemyPath,3,path_action_stop,false);
+		if(path_position = 1)
+		{
+			path_end();
+			path_start(pathName, 2, path_action_reverse, true);
+		}
+	}
+	else path_start(path_blank, 2, path_action_stop, true);
+		
 }
