@@ -4,3 +4,6 @@ slot1 = player.head;
 slot2 = player.body;
 slot3 = player.legs;
 index = 0;
+
+baseDefense = player.defense;
+totalDefense = 0;
