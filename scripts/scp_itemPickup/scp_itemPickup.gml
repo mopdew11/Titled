@@ -1,4 +1,4 @@
-//scp_itemPickup(itemID,name,info,stack,ammotype,ammo,maxAmmo);
+//scp_itemPickup(itemID,name,info,stack,ammotype,ammo,maxAmmo,fireRate);
 itemExists = scr_itemCheck(argument0);
 if(itemExists != false)
 {

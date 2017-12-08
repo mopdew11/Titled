@@ -85,24 +85,26 @@ if(inventory = true)
 	//third equipmet slot
 	global.button[22].startX = 165;
 	global.button[22].startY = 143;
-	
-	//draw passives inventory slots(moves invisible inventory buttons to the slots)
-	//first
-	global.button[23].startX = 20;
-	global.button[23].startY = 246;
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////
+	//first armor slot
+	global.button[23].startX = 13;
+	global.button[23].startY = 44;
 	
 	//second
-	global.button[24].startX = 62;
-	global.button[24].startY = 246;
+	global.button[24].startX = 13;
+	global.button[24].startY = 90;
 	
 	//third
-	global.button[25].startX = 104;
-	global.button[25].startY = 246;
+	global.button[25].startX = 13;
+	global.button[25].startY = 136;
 	
-	//4
-	global.button[26].startX = 20;
-	global.button[26].startY = 292;
+	//fourth
+	global.button[26].startX = 13;
+	global.button[26].startY = 182;
 	
+	
+	//passives[obsolete]///////////////////////////////////////////////////////////////////////////////
 	//5
 	global.button[27].startX = 62;
 	global.button[27].startY = 292;

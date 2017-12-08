@@ -711,6 +711,14 @@
             }
         },
         {
+            "Key": "71047aeb-2c39-4278-abfb-760c1874ff32",
+            "Value": {
+                "id": "0971ec4b-9079-4885-9110-30d1791c8114",
+                "resourcePath": "sprites\\spr_snowBody\\spr_snowBody.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7159d243-d11a-4630-b800-2e25d7b5c13f",
             "Value": {
                 "id": "9f27cd4e-a875-4a32-a9a9-33d8b493a507",
@@ -868,6 +876,14 @@
                 "id": "117e968e-5b02-4149-9019-fc227b0e2bee",
                 "resourcePath": "views\\8676558e-594d-4f22-98e9-b27cf999a5d6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "86b621c8-007d-419d-99db-58b79c023921",
+            "Value": {
+                "id": "a5b9204c-fff1-4e6c-8b17-3b009dae279f",
+                "resourcePath": "sprites\\spr_snowHead\\spr_snowHead.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1167,6 +1183,14 @@
             }
         },
         {
+            "Key": "b5f722d7-8dd3-435d-b58c-26e654cef33b",
+            "Value": {
+                "id": "19ebee7e-ba39-4b2c-bf05-604865c7f128",
+                "resourcePath": "sprites\\placeholder\\placeholder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b6ead595-4279-47d9-b3f2-ec31af353954",
             "Value": {
                 "id": "4b4ee5da-c72c-4527-98e2-73777d4956a5",
@@ -1212,6 +1236,14 @@
                 "id": "c4fa1a36-3950-45e6-8efd-4fc6ca2248e9",
                 "resourcePath": "sprites\\spr_tank\\spr_tank.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bfe49fcf-82c4-44a0-82fe-6bc0cf6f45d9",
+            "Value": {
+                "id": "380d70ae-fa35-450e-aee3-0c8bf7734174",
+                "resourcePath": "views\\bfe49fcf-82c4-44a0-82fe-6bc0cf6f45d9.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1300,6 +1332,14 @@
                 "id": "9e696842-c3b2-498e-a86a-45ec377cc008",
                 "resourcePath": "views\\cf73e2cf-16ef-4dca-9cc8-cf1abb93b7a5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d0845b95-f7eb-4466-b1b9-8c1ffea10b17",
+            "Value": {
+                "id": "05692a38-435a-43b0-94d0-0c3b670baaac",
+                "resourcePath": "objects\\obj_armor\\obj_armor.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1539,6 +1579,14 @@
             "Value": {
                 "id": "52d5c50a-08c0-421b-b87a-b3089bda02e3",
                 "resourcePath": "sprites\\spr_door\\spr_door.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f164becd-5753-4a9c-b187-4715e88c4a8f",
+            "Value": {
+                "id": "50135ee4-9108-46cd-a594-2570b3ecaef3",
+                "resourcePath": "sprites\\spr_snowLegs\\spr_snowLegs.yy",
                 "resourceType": "GMSprite"
             }
         },

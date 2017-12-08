@@ -65,6 +65,13 @@ primary = -1;
 secondary = 3;
 melee = 1;
 
+//armor
+head = -1;
+body = -1;
+legs = -1;
+boots = -1;
+//instance_create_depth(x,y,depth,obj_armor);
+
 //ammo
 primaryAmmo = 0;
 secondaryAmmo = 50;
