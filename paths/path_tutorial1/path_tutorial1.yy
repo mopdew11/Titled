@@ -2,7 +2,7 @@
     "id": "576e1f3a-29c7-428f-adcf-c05a01eab1a9",
     "modelName": "GMPath",
     "mvc": "1.0",
-    "name": "path1",
+    "name": "path_tutorial1",
     "closed": true,
     "hsnap": 0,
     "kind": 0,

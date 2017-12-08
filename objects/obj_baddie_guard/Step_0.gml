@@ -17,3 +17,9 @@ if(baddieHealth <= 0)
 	scp_dropItemExt(item,iName,iInfo,stack,ammoType,ammo,maxAmmo,fireRate);
 	instance_destroy();
 }
+
+
+if(global.detected == false && path_index = -1)
+{
+		path_start(pathName, 2, path_action_reverse, true);
+}

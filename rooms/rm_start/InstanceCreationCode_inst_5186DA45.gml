@@ -6,3 +6,4 @@ ammoType = -2;
 ammo = -2;
 maxAmmo = -2;
 fireRate = -2;
+pathName = path_start0;

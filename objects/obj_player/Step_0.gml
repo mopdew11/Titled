@@ -206,3 +206,8 @@ if(dead = false)
 {
 	sprite_index = spr_dead;
 }
+
+if(detected == true && !collision_line(obj_player.x, obj_player.y,obj_baddie.x, obj_baddie.y, obj_terrain, false, false))
+{
+	alarm[4] = 4 * room_speed;	
+}

@@ -21,3 +21,4 @@ sRan = irandom_range(10, 60);
 baddieHealth = 50;
 baddieDamage = 50;
 enemyPath = path_add();
+pathName = path_blank;
