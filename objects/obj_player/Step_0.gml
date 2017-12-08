@@ -42,6 +42,12 @@ if(dead = false)
 	primary = global.inv[0,20];
 	secondary = global.inv[0,21];
 	melee = global.inv[0,22];
+	
+	//armor
+	head = global.inv[0,23];
+	body = global.inv[0,24];
+	legs = global.inv[0,25];
+	boots = global.inv[0,26];
 
 	//select up
 	if mouse_wheel_up()
