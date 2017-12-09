@@ -1,9 +1,8 @@
-item = 0;
-iName = "Alien Blaster";
-iInfo = "seems to be from space. At least thats what the name implies.";
-stack = 1;
-ammoType = 5;
-ammo = 20;
-maxAmmo = 20;
-fireRate = 4;
-pathName = path_blank;
+item = 13;
+iName = "Health Pack";
+iInfo = "GIBS YOU HEALTH";
+stack = irandom_range(0,2);
+ammoType = -2;
+ammo = 40;
+maxAmmo = -2;
+fireRate = -2;
