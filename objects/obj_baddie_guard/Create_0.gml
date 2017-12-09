@@ -24,3 +24,5 @@ enemyPath = path_add();
 pathName = path_blank;
 startX = x;
 startY = y;
+//path_start(pathName, 2, path_action_reverse, true);
+gameStart = true;

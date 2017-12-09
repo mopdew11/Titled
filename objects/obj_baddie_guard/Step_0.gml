@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(detected == true)
+if(detected == true && distance_to_object(obj_player) <= 300)
 {
 	scp_badShoot(baddieDamage,1.5);
 	
@@ -19,10 +19,11 @@ if(baddieHealth <= 0)
 }
 
 
-if(global.detected == false && path_index = -1)
+if(detected == false && path_index = -1)
 {
 	if(mp_grid_path(global.enemyGrid,enemyPath,x,y,startX,startY,1))
 	{
+		path_end();
 		path_start(enemyPath,3,path_action_stop,false);
 		if(path_position = 1)
 		{
@@ -30,6 +31,17 @@ if(global.detected == false && path_index = -1)
 			path_start(pathName, 2, path_action_reverse, true);
 		}
 	}
-	else path_start(path_blank, 2, path_action_stop, true);
+	else path_start(pathName, 2, path_action_stop, true);
+	
+	
+	
+	
+	
 		
+}
+
+if(gameStart = true)
+{
+	path_start(pathName, moveSpeed, path_action_reverse, true);
+	gameStart = false;
 }
