@@ -4,7 +4,7 @@ if(detected == true && distance_to_object(obj_player) <= 300)
 {
 	scp_badShoot(baddieDamage,1.5);
 	
-	if(!collision_line(x,y,obj_player.x,obj_player.y,obj_terrain,true,false) && alarm[1] == -1)
+	if(!collision_line(x,y,obj_player.x,obj_player.y,obj_non_doors,true,false) && alarm[1] == -1)
 	{
 		pX = (obj_player.x div 16) * 16 + 8;
 		pY = (obj_player.y div 16) * 16 + 8

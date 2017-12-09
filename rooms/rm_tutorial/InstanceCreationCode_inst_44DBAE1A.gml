@@ -6,4 +6,4 @@ ammoType = 5;
 ammo = 20;
 maxAmmo = 20;
 fireRate = 4;
-pathName = path_blank;
+pathName = path_tutorial3;

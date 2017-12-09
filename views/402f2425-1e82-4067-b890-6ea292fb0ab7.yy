@@ -6,7 +6,8 @@
     "children": [
         "14fb1051-9687-4914-ab00-33b43f23e883",
         "576e1f3a-29c7-428f-adcf-c05a01eab1a9",
-        "ac65901e-b13f-4c27-9cf0-293873c17a36"
+        "ac65901e-b13f-4c27-9cf0-293873c17a36",
+        "bb859d8a-3065-4489-a42e-52c08ced61cd"
     ],
     "filterType": "GMPath",
     "folderName": "room_tutorial",
