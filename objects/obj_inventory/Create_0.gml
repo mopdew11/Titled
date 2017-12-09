@@ -35,9 +35,9 @@ for(i = 0; i < maxItems; i++)
 scp_itemPickup(4,"Shotgun", "Shop smart, shop S mart. YOU GOT THAT?",1,8,2,2,0);
 scp_itemPickup(6,"Light Blade","Definitely not a lightsaber. Nope. Definitely not.",1,-2,-2,-2,-2);
 scp_itemPickup(7,"Grenade launcher","BOOM! headsho...uh...shot near the person.",1,9,6,6,2);
-scp_itemPickup(10,"Snow Cammo Head Plate","NO ONE CAN SEE ME!(why is it so hot?)",1,-2,-2,-2,-2);
-scp_itemPickup(11,"Snow Cammo Body Plating","Seriously, why is it so hot!",1,-2,-2,-2,-2);
-scp_itemPickup(12,"Snow Cammo Leg Plates","What do you mean its a desert?",1,-2,-2,-2,-2);
+scp_itemPickup(10,"Snow Cammo Head Plate","NO ONE CAN SEE ME!(why is it so hot?)",1,2,-2,-2,-2);
+scp_itemPickup(11,"Snow Cammo Body Plating","Seriously, why is it so hot!",1,3,-2,-2,-2);
+scp_itemPickup(12,"Snow Cammo Leg Plates","What do you mean its a desert?",1,2,-2,-2,-2);
 
 //setup slots for equipment
 for(i = maxItems; i <= maxEquipment; i++)

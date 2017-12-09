@@ -1183,14 +1183,6 @@
             }
         },
         {
-            "Key": "b5f722d7-8dd3-435d-b58c-26e654cef33b",
-            "Value": {
-                "id": "19ebee7e-ba39-4b2c-bf05-604865c7f128",
-                "resourcePath": "sprites\\placeholder\\placeholder.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "b6ead595-4279-47d9-b3f2-ec31af353954",
             "Value": {
                 "id": "4b4ee5da-c72c-4527-98e2-73777d4956a5",
