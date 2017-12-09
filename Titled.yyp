@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "2ec322cc-0256-4e0f-a02c-c7cb7900ccc5",
+            "Value": {
+                "id": "3d5b88a5-521c-48ec-b98d-dd30a62da503",
+                "resourcePath": "objects\\obj_doors\\obj_doors.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "30c9ef18-0a7a-4305-9561-cadcfbc8bbe5",
             "Value": {
                 "id": "cfcf9f37-561f-456c-b9f1-e1858cce81d4",
@@ -1143,6 +1151,14 @@
             }
         },
         {
+            "Key": "aa2036d7-b5bf-4826-8554-541210b51c46",
+            "Value": {
+                "id": "c75d6375-42ab-445d-8c6a-b0eaa46da959",
+                "resourcePath": "objects\\obj_non_doors\\obj_non_doors.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ac65901e-b13f-4c27-9cf0-293873c17a36",
             "Value": {
                 "id": "31366869-c5d3-4069-a167-c17bae8d1b1b",
@@ -1204,6 +1220,14 @@
                 "id": "3b18699a-1147-4066-92bf-032249ae5dee",
                 "resourcePath": "scripts\\scp_xCol\\scp_xCol.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bb859d8a-3065-4489-a42e-52c08ced61cd",
+            "Value": {
+                "id": "1168f4e7-08ff-4e28-a52f-88d97e6ceb6a",
+                "resourcePath": "paths\\path_tutorial3\\path_tutorial3.yy",
+                "resourceType": "GMPath"
             }
         },
         {

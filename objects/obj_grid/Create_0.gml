@@ -10,4 +10,4 @@ vCells = room_width div cell_height;
 global.enemyGrid = mp_grid_create(0,0,hCells,vCells,cell_width,cell_height);
 
 //add walls
-mp_grid_add_instances(global.enemyGrid,obj_terrain,true);
+mp_grid_add_instances(global.enemyGrid,obj_non_doors,true);

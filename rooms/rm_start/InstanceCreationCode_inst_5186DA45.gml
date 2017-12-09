@@ -7,4 +7,4 @@ ammo = -2;
 maxAmmo = -2;
 fireRate = -2;
 pathName = path_start0;
-path_start(pathName, 2, path_action_reverse, true);
+//path_start(pathName, 2, path_action_reverse, true);
