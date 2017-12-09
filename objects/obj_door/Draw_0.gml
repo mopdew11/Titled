@@ -14,6 +14,6 @@ else
 		image_index = 0;
 }
 
-if(locked && distance_to_object(obj_baddie) > 10)
+if(locked && distance_to_object(obj_baddie) > distance_buffer)
 	image_index = 5;
 draw_self();
