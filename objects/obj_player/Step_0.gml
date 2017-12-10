@@ -222,7 +222,11 @@ if(place_meeting(x,y,obj_view_cone))
 		detected = true;
 		badCone = "none";
 	}
-}
+}	
+	if(instance_exists(obj_baddie) && !collision_line(x,y,obj_baddie.x, obj_baddie.y, obj_terrain, true, true))
+	{
+		alarm[4] = 4 * room_speed;
+	}
 
 /*if(badCone != "none" && !collision_line(badCone.master.x,badCone.master.y,obj_player.x,obj_player.y,obj_terrain,true,true))
 	{
