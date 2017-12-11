@@ -82,7 +82,7 @@
             "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
             "name": "foregroundTiles",
             "id": "7774c48e-aa9d-4499-bb22-e70d80db7a06",
-            "depth": -100,
+            "depth": 0,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -183,31 +183,6 @@
         },
         {
             "__type": "GMRPathLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Path_3",
-            "id": "399bbede-740d-4978-ad1c-5ac99d53a3ec",
-            "colour": { "Value": 4278190335 },
-            "depth": 0,
-            "grid_x": 32,
-            "grid_y": 32,
-            "hierarchyFrozen": false,
-            "hierarchyVisible": true,
-            "inheritLayerDepth": false,
-            "inheritLayerSettings": false,
-            "inheritSubLayers": false,
-            "inheritVisibility": false,
-            "layers": [
-
-            ],
-            "m_parentID": "00000000-0000-0000-0000-000000000000",
-            "m_serialiseFrozen": false,
-            "modelName": "GMRPathLayer",
-            "pathId": "bb859d8a-3065-4489-a42e-52c08ced61cd",
-            "mvc": "1.0",
-            "userdefined_depth": false,
-            "visible": true
-        },
-        {
-            "__type": "GMRPathLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Path_2",
             "id": "6dc8a113-6b6d-4a44-81cd-cdd9e7e408d6",
             "colour": { "Value": 4278517504 },
@@ -215,7 +190,7 @@
             "grid_x": 8,
             "grid_y": 8,
             "hierarchyFrozen": false,
-            "hierarchyVisible": true,
+            "hierarchyVisible": false,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
@@ -229,7 +204,7 @@
             "pathId": "14fb1051-9687-4914-ab00-33b43f23e883",
             "mvc": "1.0",
             "userdefined_depth": true,
-            "visible": true
+            "visible": false
         },
         {
             "__type": "GMRPathLayer_Model:#YoYoStudio.MVCFormat",

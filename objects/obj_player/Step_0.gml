@@ -13,6 +13,7 @@ if(dead = false)
 	inventoryKey = keyboard_check_pressed(vk_tab);
 	reload = keyboard_check_pressed(ord("R"));
 	sprintKey = keyboard_check_pressed(vk_lshift);
+	heal = keyboard_check_pressed(ord("H"));
 	//inventory toggle
 	if(inventoryKey == true && inventory = false)
 	{
@@ -32,6 +33,20 @@ if(dead = false)
 	{
 		sprint = false;	
 	}
+	
+	//heal
+	if(heal && playerHealth <= maxHealth)
+	{
+		if(scp_searchArray(global.inv,13))
+		{
+			playerHealth += 40;
+			if(playerHealth >= maxHealth)
+			{
+				playerHealth -= playerHealth - maxHealth;
+			}
+		}
+	}
+	
 	//can shoot
 	if inventory == false
 		canShoot = true;
