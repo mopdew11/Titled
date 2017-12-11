@@ -24,5 +24,12 @@ enemyPath = path_add();
 pathName = path_blank;
 startX = x;
 startY = y;
+
+//random drops
+dropNum = irandom_range(10,30);
+dropNum2 = irandom_range(2,10);
+dropNum3 = irandom_range(1,2);
+dropItem = irandom_range(0,2);
+
 //path_start(pathName, 2, path_action_reverse, true);
 gameStart = true;

@@ -14,8 +14,18 @@ if(detected == true && distance_to_object(obj_player) <= 300)
 
 if(baddieHealth <= 0)
 {
-	scp_dropItemExt(item,iName,iInfo,stack,ammoType,ammo,maxAmmo,fireRate);
-	instance_destroy();
+	switch dropItem
+	{
+		case 0: scp_dropItemExt(5,"Ballistic Ammo","what do I do with this? throw it at 'em?", dropNum,-2,-2,-2,-2);
+				instance_destroy();
+				break;
+		case 1: scp_dropItemExt(13,"Health Pack", "Gibs you 40 health", dropNum3,-2,40,-2,-2);
+				instance_destroy();
+				break;
+		case 2: scp_dropItemExt(9,"Explosive Ammo", "Explodes. be carefull.",dropNum2,-2,-2,-2,-2);
+				instance_destroy();
+				break;
+	}
 }
 
 

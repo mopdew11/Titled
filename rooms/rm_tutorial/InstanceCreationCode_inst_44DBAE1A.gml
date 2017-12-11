@@ -6,3 +6,5 @@ ammoType = -2;
 ammo = 40;
 maxAmmo = -2;
 fireRate = -2;
+dropRate = irandom_range(0,10);
+dropThing = irandom_range(0,1);
