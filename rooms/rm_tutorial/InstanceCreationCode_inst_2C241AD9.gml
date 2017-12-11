@@ -1,2 +1,2 @@
-startPosX = 201;
+startPosX = 199;
 startPosY = 377;
