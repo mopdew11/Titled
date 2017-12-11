@@ -25,14 +25,18 @@ if(dead = false)
 	}
 	
 	//sprint toggle
-	if(sprintKey = true&& sprint = false)
+	if(class = 0)
 	{
-		sprint = true
+		if(sprintKey = true&& sprint = false)
+		{
+			sprint = true
+		}
+		else if(sprintKey = true && sprint = true)
+		{
+			sprint = false;	
+		}
 	}
-	else if(sprintKey = true && sprint = true)
-	{
-		sprint = false;	
-	}
+	
 	
 	//heal
 	if(heal && playerHealth <= maxHealth)
