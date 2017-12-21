@@ -6,7 +6,7 @@ if(inst != noone)
 	{
 		open = true;
 		image_index = 1;
-		scp_dropItemExt(4,"Shotgun","Shop smart, shop S mart. YOU GOT THAT?",1,8,2,2,0);
+		scp_dropItemExt(ID,name,info,stack,ammoType,ammo,maxAmmo,fireRate);
 	}
 }
 

@@ -39,14 +39,14 @@ if(instance_nearest(x,y,obj_tutorial).close == true)
 
 	draw_set_font(font);
 	draw_set_color(c_dkgray);
-	draw_set_alpha(.2);
+	draw_set_alpha(.5);
 	draw_rectangle(x,y,x+box_width,y+box_height,0);
 	draw_set_color(c_gray);
 	draw_rectangle(x,y,x+box_width,y+box_height,1);
 	draw_set_alpha(1);
 
 	draw_set_font(font);
-	draw_set_color(c_gray);
+	draw_set_color(c_yellow);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 	draw_text_ext

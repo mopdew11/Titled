@@ -13,9 +13,9 @@ ammo = 5
 primaryArray = [0,4,7];
 secondaryArray = [3];
 meleeArray = [1,2,6];
-headArray = [10];
-bodyArray = [11];
-legsArray = [12];
+headArray = [10,14];
+bodyArray = [11,15];
+legsArray = [12,16];
 
 globalvar maxItems;//number of inventory spaces
 maxItems = 20;
@@ -32,12 +32,7 @@ for(i = 0; i < maxItems; i++)
 	global.button[i].slot = i;
 }
 //itemID,name,info,stack,ammotype,ammo,maxAmmo,fireRate
-scp_itemPickup(4,"Shotgun", "Shop smart, shop S mart. YOU GOT THAT?",1,8,2,2,0);
 scp_itemPickup(6,"Light Blade","Definitely not a lightsaber. Nope. Definitely not.",1,-2,-2,-2,-2);
-scp_itemPickup(7,"Grenade launcher","BOOM! headsho...uh...shot near the person.",1,9,6,6,2);
-scp_itemPickup(10,"Snow Cammo Head Plate","NO ONE CAN SEE ME!(why is it so hot?)",1,2,-2,-2,-2);
-scp_itemPickup(11,"Snow Cammo Body Plating","Seriously, why is it so hot!",1,3,-2,-2,-2);
-scp_itemPickup(12,"Snow Cammo Leg Plates","What do you mean its a desert?",1,2,-2,-2,-2);
 
 //setup slots for equipment
 for(i = maxItems; i <= maxEquipment; i++)

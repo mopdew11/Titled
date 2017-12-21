@@ -1,5 +1,5 @@
 //scp_dropItemExt(id,name,info,stack,ammoType,ammo,maxAmmo,fireRate)
-item = instance_create_depth(x,y,depth,obj_item);
+item = instance_create_depth(x+8,y+8,depth-1,obj_item);
 with item
 {
 	name = argument1;
