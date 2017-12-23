@@ -1,3 +1,4 @@
+
 x = obj_player.x;
 y = obj_player.y;
 visible = false;
@@ -40,7 +41,6 @@ if(obj_player.sprint = true)
 			default: visible = false; break;
 		}
 	}
-
 
 	if(x = prevX && y = prevY)
 		visible = false;

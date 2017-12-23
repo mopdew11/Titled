@@ -28,6 +28,7 @@ player.defense += totalDefense
 
 depth = obj_player.depth -1;
 
+
 switch obj_player.dir
 {
 	case "right": index = 2; break;

@@ -10,7 +10,7 @@ if (place_meeting(x+moveX,y,obj_terrain))
 	{
 		x += sign(moveX);
 	}
-	moveX = 0
+	moveX = 0;
 }
 //move on x axis
 x += moveX;
@@ -21,7 +21,7 @@ if (place_meeting(x,y+moveY,obj_terrain))
 	{
 		y += sign(moveY);
 	}
-	moveY = 0
+	moveY = 0;
 }
 //move on y axis
 y += moveY;

@@ -19,16 +19,13 @@ if keyboard_check_pressed(vk_f11)
    }
 }
 //close window
-if(inventory != true)
-{
-	if(keyboard_check_pressed(vk_escape))
-	{
-		game_end();
-	}
-}else
+if(inventory == true)
 {
 	if(keyboard_check_pressed(vk_escape))
 	{
 		inventory = false;
 	}
 }
+
+if(keyboard_check_pressed(vk_f1))
+	game_end();

@@ -2,7 +2,7 @@
 depth = -99;
 healthPercent = obj_player.playerHealth / 100;
 hp = 315 * healthPercent;
-draw_set_color(c_red);
+draw_set_color(c_aqua);
 startX = argument0;
 startY = argument1;
 
