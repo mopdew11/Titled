@@ -1,6 +1,6 @@
 if(pause)
 {
-	
+	textOffset = string_height("PAUSED FOR DAYS< YO");
 	guiX = device_mouse_x_to_gui(0);
 	guiY = device_mouse_y_to_gui(0);
 	startX = display_get_gui_width()-130;

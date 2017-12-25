@@ -18,7 +18,7 @@ if keyboard_check_pressed(vk_f11)
       window_set_fullscreen(true);
    }
 }
-//close window
+//close inventory
 if(inventory == true)
 {
 	if(keyboard_check_pressed(vk_escape))
@@ -26,6 +26,20 @@ if(inventory == true)
 		inventory = false;
 	}
 }
-
-if(keyboard_check_pressed(vk_f1))
+//close game
+if(keyboard_check_pressed(vk_f11))
 	game_end();
+//go to tutorial
+if(keyboard_check_pressed(vk_f1))
+{
+	room_goto(rm_tutorial);
+	obj_player.x = 880;
+	obj_player.y = 368;
+}
+//go to first level
+if(keyboard_check_pressed(vk_f2))
+{
+	room_goto(rm_level0);
+	obj_player.x = 232;
+	obj_player.y = 119;
+}
