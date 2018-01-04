@@ -447,6 +447,14 @@
             }
         },
         {
+            "Key": "4438c9fc-f513-4ecd-bed4-8e7eff887dc5",
+            "Value": {
+                "id": "c21bb9ea-4185-4ede-a7ac-98b668a58742",
+                "resourcePath": "views\\4438c9fc-f513-4ecd-bed4-8e7eff887dc5.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4525f73b-b0e1-4ee1-8146-43df53b56b03",
             "Value": {
                 "id": "7b01f34d-4bf8-4dc3-96f1-bfc1784b4967",
@@ -1087,6 +1095,14 @@
             }
         },
         {
+            "Key": "9ccb1649-6919-4250-9473-ded606a6e347",
+            "Value": {
+                "id": "7122d08a-2c77-4c0e-ae9c-8048e6a1f490",
+                "resourcePath": "views\\9ccb1649-6919-4250-9473-ded606a6e347.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9ceb9c20-0c91-4d75-ac91-39864640a475",
             "Value": {
                 "id": "d76e7cd3-e849-42e4-b168-a6ab4ff70d05",
@@ -1164,6 +1180,14 @@
                 "id": "891424b0-b3e7-4bd0-907e-4b43a9cf36ff",
                 "resourcePath": "views\\a5a8a28e-7300-4f61-a974-dee50b5ddcd7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a6e84920-4e09-4198-8a33-f6d2c8d2e32f",
+            "Value": {
+                "id": "8139144f-aa75-4fd1-b31a-dfe8cdb2e4f5",
+                "resourcePath": "scripts\\scr_PartSystemsCreate\\scr_PartSystemsCreate.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1695,6 +1719,14 @@
             }
         },
         {
+            "Key": "f41164fe-d0de-4a62-864d-efd0bab84837",
+            "Value": {
+                "id": "2287c456-e831-41a7-b5be-57ef17d99208",
+                "resourcePath": "scripts\\scr_grenadeParticles\\scr_grenadeParticles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "add6a3ad-7ff6-4c58-bb72-2be61caea172",
@@ -1854,7 +1886,9 @@
         "7894ee11-0c30-46fa-b103-1c54e48a96ed",
         "9c878880-8405-4045-a60f-edb429468af0",
         "8e24211a-46dc-46a1-b6d2-047685d441e4",
-        "910753ae-4e78-4403-8325-10b0213a3b81"
+        "910753ae-4e78-4403-8325-10b0213a3b81",
+        "a6e84920-4e09-4198-8a33-f6d2c8d2e32f",
+        "f41164fe-d0de-4a62-864d-efd0bab84837"
     ],
     "tutorial": ""
 }
