@@ -43,3 +43,10 @@ if(keyboard_check_pressed(vk_f2))
 	obj_player.x = 232;
 	obj_player.y = 119;
 }
+//go to sescond level
+if(keyboard_check_pressed(vk_f3))
+{
+	room_goto(rm_level1);
+	obj_player.x = 327;
+	obj_player.y = 183;
+}

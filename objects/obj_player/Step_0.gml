@@ -7,6 +7,7 @@ if(dead = false)
 	down = keyboard_check(ord("S"));
 	right = keyboard_check(ord("D"));
 	shoot = mouse_check_button_pressed(mb_left);
+	autoShoot = mouse_check_button(mb_left);
 	charge = mouse_check_button_pressed(mb_right);
 	chargeRelese = mouse_check_button_released(mb_right);
 	meleekey = keyboard_check_pressed(ord("F"));
@@ -37,7 +38,6 @@ if(dead = false)
 		}
 	}
 	
-	
 	//heal
 	if(heal && playerHealth <= maxHealth)
 	{
@@ -61,6 +61,12 @@ if(dead = false)
 	primary = global.inv[0,20];
 	secondary = global.inv[0,21];
 	melee = global.inv[0,22];
+	
+	//automatic weapons check
+	if(primary == 17)
+		auto = true;
+	else
+		auto = false;
 	
 	//armor
 	head = global.inv[0,23];
@@ -180,14 +186,15 @@ if(dead = false)
 	//primary shooting
 	if(sprint = false)
 	{
-		if(shoot == 1 && selected == 0 && global.inv[5,20] > 0 && canShoot == true && alarm[3] == -1)
+		if((shoot == 1 || (auto == true && autoShoot = 1)) && selected == 0 && global.inv[5,20] > 0 && canShoot == true && alarm[3] == -1)
 		{
 			alarm[3] = pFireRate;
 			switch primary
 			{
-				case 0: audio_play_sound(snd_shoot,5,false); scp_alienGun(10,1); global.inv[5,20]--; break;
+				case 0: audio_play_sound(snd_shoot,5,false); scp_alienGun(10,.8); global.inv[5,20]--; break;
 				case 4:	scp_shotgun(5); global.inv[5,20]--; break;
 				case 7: scp_grenadeLauncher(50,3,15,1.1); global.inv[5,20]--;break;
+				case 17: scp_alienGun(15,1); audio_play_sound(snd_shoot,5,false); auto = true; break;
 				default: break;
 			}
 		}

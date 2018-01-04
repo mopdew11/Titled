@@ -1,3 +1,4 @@
+//scp_alienGun(damage,scale);
 //spawns projectile
 instId = instance_create_depth(x,y,10, obj_projectile);
 

@@ -9,7 +9,7 @@
         "c921e9d9-39bc-4d43-a3b6-e5224b9cc9c0"
     ],
     "filterType": "GMPath",
-    "folderName": "room_start",
+    "folderName": "room_level0",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

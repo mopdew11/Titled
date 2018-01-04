@@ -1,4 +1,4 @@
-if(!pause)
+if(!pause && !inventory)
 {
 	pause = true;
 	instance_deactivate_all(true);
@@ -6,5 +6,6 @@ if(!pause)
 else
 {
 	pause = false;
+	inventory = false;
 	instance_activate_all();
 }

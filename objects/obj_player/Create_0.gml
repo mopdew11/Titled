@@ -64,6 +64,7 @@ selected = 1;
 primary = -1;
 secondary = 3;
 melee = 1;
+auto = false;
 
 //armor
 head = -1;

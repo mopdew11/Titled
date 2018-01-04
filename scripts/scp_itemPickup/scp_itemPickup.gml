@@ -18,7 +18,7 @@ if(itemExists != false)
 			global.inv[4,i] = argument4;//ammoType
 			global.inv[5,i] = argument5;//ammo
 			global.inv[6,i] = argument6;//maxAmmo
-			global.inv[7,i] = argument7;
+			global.inv[7,i] = argument7;//fireRate
 		
 			return true;
 		}

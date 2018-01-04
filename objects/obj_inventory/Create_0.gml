@@ -10,7 +10,7 @@ shgotgun = 4
 ammo = 5
 */
 //put the id of the items that are in the category in the proper array
-primaryArray = [0,4,7];
+primaryArray = [0,4,7,17];
 secondaryArray = [3];
 meleeArray = [1,2,6];
 headArray = [10,14];
