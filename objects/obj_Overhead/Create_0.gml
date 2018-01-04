@@ -8,3 +8,4 @@ middleX = camera_get_view_width(view_camera[0]);
 
 globalvar time;
 time = 1;
+scr_PartSystemsCreate();
